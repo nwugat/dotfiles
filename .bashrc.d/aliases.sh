@@ -22,6 +22,7 @@ alias notes=nvo
 # Clipboard
 alias cpe='printf $(date +%s) | wl-copy'
 # alias cpts='printf $(date "+%+4Y%+2m%+2d%+2H%+2M%+2S") | wl-copy'
+alias cpdk='printf "%s" $(date "+%Y%m%d-%H%M") | wl-copy'
 alias clipi='wl-copy'
 alias clipo='wl-paste'
 
