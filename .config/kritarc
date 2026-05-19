@@ -2,13 +2,13 @@ AlsoSaveAsKra=false
 AntialiasSelectionOutline=false
 ArtColorSel.ColorSpace=0
 ArtColorSel.InversedSaturation=false
-ArtColorSel.Light=0
+ArtColorSel.Light=0.02523894653169537
 ArtColorSel.LightPieces=11
 ArtColorSel.NumRings=7
 ArtColorSel.RingPieces=12
 ArtColorSel.SelColorH=0
 ArtColorSel.SelColorS=0
-ArtColorSel.SelColorX=0
+ArtColorSel.SelColorX=0.02523894653169537
 ArtColorSel.defaultHueSteps=12
 ArtColorSel.defaultSaturationSteps=7
 ArtColorSel.defaultValueScaleSteps=11
@@ -31,13 +31,15 @@ ConvertToImageColorSpaceOnImport=false
 CreateBackupFile=true
 CurrentWorkspace=Nwu_Draw
 ExportConfiguration-image/png=<!DOCTYPE params>\n<params>\n <param type="internal" name="alpha">true</param>\n <param type="internal" name="compression">3</param>\n <param type="internal" name="downsample">false</param>\n <param type="internal" name="forceSRGB">true</param>\n <param type="internal" name="indexed">false</param>\n <param type="internal" name="interlaced">false</param>\n <param type="internal" name="saveAsHDR">false</param>\n <param type="internal" name="saveSRGBProfile">false</param>\n <param type="internal" name="storeAuthor">false</param>\n <param type="internal" name="storeMetaData">false</param>\n <param type="color" name="transparencyFillcolor"><![CDATA[<!DOCTYPE color>\n<color>\n <RGB g="1" space="sRGB-elle-V2-g10.icc" b="1" r="1"/>\n</color>\n]]></param>\n</params>\n
+FetchNews=true
+FetchNewsLanguages=en,en_Latn_GB
 FilterSelector/LastUsedFilter=gaussian blur
 GamutMasks.viewMode=0
 KineticScrollingEnabled=true
 KineticScrollingGesture=2
 KineticScrollingHideScrollbar=false
 KineticScrollingSensitivity=75
-KisDlgPreferences/CurrentPage=general
+KisDlgPreferences/CurrentPage=tablet
 Krita/Ocio/DisplayDevice=sRGB
 Krita/Ocio/DisplayLook=None
 Krita/Ocio/DisplayView=Raw
@@ -47,13 +49,17 @@ Krita/Ocio/OcioConfigPath=
 Krita/Ocio/OcioLockColorVisualRepresentation=false
 Krita/Ocio/OcioLutPath=
 Krita/Ocio/UseOcio=false
-LastBackGroundColor=<!DOCTYPE LastBackGroundColor>\n<LastBackGroundColor>\n <RGB b="1" r="1" space="sRGB-elle-V2-srgbtrc.icc" g="1"/>\n</LastBackGroundColor>\n
+LastBackGroundColor=<!DOCTYPE LastBackGroundColor>\n<LastBackGroundColor>\n <RGB b="1" g="1" r="1" space="sRGB-elle-V2-srgbtrc.icc"/>\n</LastBackGroundColor>\n
+LastColorHistory=<!DOCTYPE LastColorHistory>\n<colors/>\n
 LastEraser_-1=a) Eraser Soft
-LastForeGroundColor=<!DOCTYPE LastForeGroundColor>\n<LastForeGroundColor>\n <RGB b="0" r="0" space="sRGB-elle-V2-srgbtrc.icc" g="0"/>\n</LastForeGroundColor>\n
-LastPreset=!) Nwu Paint
-LastPreset_-1=!) Nwu Paint
+LastForeGroundColor=<!DOCTYPE LastForeGroundColor>\n<LastForeGroundColor>\n <RGB b="0.00392156885936856" g="0.00392156885936856" r="0.00392156885936856" space="sRGB-elle-V2-srgbtrc.icc"/>\n</LastForeGroundColor>\n
+LastPreset=b) Basic-5 Size textured
+LastPreset_-1=b) Basic-5 Size textured
 LineSmoothingDelayDistance=1
-LineSmoothingDistance=34
+LineSmoothingDistance=68
+LineSmoothingDistanceKeepAspectRatio=true
+LineSmoothingDistanceMax=50
+LineSmoothingDistanceMin=50
 LineSmoothingFinishStabilizedCurve=true
 LineSmoothingScalableDistance=true
 LineSmoothingSmoothPressure=false
@@ -87,7 +93,9 @@ autoPinLayers=true
 autosavefileshidden=true
 backupfilelocation=0
 backupfilesuffix=~
-baseLength=30
+baseLength=60
+brushEditorSplitterSizes=272,816,264
+brushEditorWindowGeometry=\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\x00\xff\xff\xff\xe4\x00\x00\x05U\x00\x00\x02\xf2\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x05U\x00\x00\x02\xf2\x00\x00\x00\x00\x00\x00\x00\x00\x05V\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x05U\x00\x00\x02\xf2
 brushHudSettings=<!DOCTYPE hud_properties>\n<hud_properties>\n <version type="value" value="1"/>\n <paintbrush>\n  <properties_list type="array">\n   <item_0 type="value" value="size"/>\n   <item_1 type="value" value="opacity"/>\n   <item_2 type="value" value="angle"/>\n  </properties_list>\n </paintbrush>\n <colorsmudge>\n  <properties_list type="array">\n   <item_0 type="value" value="size"/>\n   <item_1 type="value" value="opacity"/>\n   <item_2 type="value" value="smudge_mode"/>\n   <item_3 type="value" value="smudge_length"/>\n   <item_4 type="value" value="smudge_color_rate"/>\n  </properties_list>\n </colorsmudge>\n <sketchbrush>\n  <properties_list type="array">\n   <item_0 type="value" value="opacity"/>\n   <item_1 type="value" value="size"/>\n  </properties_list>\n </sketchbrush>\n <hairybrush>\n  <properties_list type="array">\n   <item_0 type="value" value="size"/>\n   <item_1 type="value" value="opacity"/>\n  </properties_list>\n </hairybrush>\n <experimentbrush>\n  <properties_list type="array">\n   <item_0 type="value" value="opacity"/>\n   <item_1 type="value" value="shape_windingfill"/>\n  </properties_list>\n </experimentbrush>\n <spraybrush>\n  <properties_list type="array">\n   <item_0 type="value" value="size"/>\n   <item_1 type="value" value="opacity"/>\n   <item_2 type="value" value="spray_particlecount"/>\n   <item_3 type="value" value="spray_density"/>\n  </properties_list>\n </spraybrush>\n <hatchingbrush>\n  <properties_list type="array">\n   <item_0 type="value" value="size"/>\n   <item_1 type="value" value="opacity"/>\n   <item_2 type="value" value="hatching_angle"/>\n   <item_3 type="value" value="hatching_thickness"/>\n   <item_4 type="value" value="hatching_separation"/>\n  </properties_list>\n </hatchingbrush>\n <gridbrush>\n  <properties_list type="array">\n   <item_0 type="value" value="size"/>\n   <item_1 type="value" value="opacity"/>\n   <item_2 type="value" value="grid_divisionlevel"/>\n  </properties_list>\n </gridbrush>\n <curvebrush>\n  <properties_list type="array">\n   <item_0 type="value" value="opacity"/>\n   <item_1 type="value" value="curve_historysize"/>\n   <item_2 type="value" value="curve_linewidth"/>\n   <item_3 type="value" value="curve_lineopacity"/>\n   <item_4 type="value" value="curve_connectionline"/>\n  </properties_list>\n </curvebrush>\n <dynabrush>\n  <properties_list type="array">\n   <item_0 type="value" value="dyna_diameter"/>\n   <item_1 type="value" value="opacity"/>\n   <item_2 type="value" value="dyna_mass"/>\n   <item_3 type="value" value="dyna_drag"/>\n  </properties_list>\n </dynabrush>\n <particlebrush>\n  <properties_list type="array">\n   <item_0 type="value" value="opacity"/>\n   <item_1 type="value" value="particle_particles"/>\n   <item_2 type="value" value="particle_opecityweight"/>\n   <item_3 type="value" value="particle_iterations"/>\n  </properties_list>\n </particlebrush>\n <duplicate>\n  <properties_list type="array">\n   <item_0 type="value" value="size"/>\n   <item_1 type="value" value="opacity"/>\n   <item_2 type="value" value="clone_healing"/>\n   <item_3 type="value" value="clone_movesource"/>\n  </properties_list>\n </duplicate>\n <deformbrush>\n  <properties_list type="array">\n   <item_0 type="value" value="size"/>\n   <item_1 type="value" value="opacity"/>\n   <item_2 type="value" value="deform_amount"/>\n   <item_3 type="value" value="deform_mode"/>\n  </properties_list>\n </deformbrush>\n <tangentnormal>\n  <properties_list type="array">\n   <item_0 type="value" value="size"/>\n   <item_1 type="value" value="opacity"/>\n  </properties_list>\n </tangentnormal>\n <filter>\n  <properties_list type="array">\n   <item_0 type="value" value="size"/>\n   <item_1 type="value" value="opacity"/>\n  </properties_list>\n </filter>\n <roundmarker>\n  <properties_list type="array">\n   <item_0 type="value" value="opacity"/>\n   <item_1 type="value" value="size"/>\n  </properties_list>\n </roundmarker>\n</hud_properties>\n
 calculateAnimationCacheInBackground=true
 canvasBorderColor=128,128,128
@@ -143,15 +151,17 @@ forcedDpiForQtFontBugWorkaround=-1
 fpsLimit=100
 frameRenderingClones=3
 frameRenderingTimeout=30000
-generatordialog/geometry=\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01\x94\x00\x00\x00\xf9\x00\x00\x04O\x00\x00\x02\xc2\x00\x00\x01\x94\x00\x00\x01\x15\x00\x00\x04O\x00\x00\x02\xc2\x00\x00\x00\x00\x00\x00\x00\x00\x05V\x00\x00\x01\x94\x00\x00\x01\x15\x00\x00\x04O\x00\x00\x02\xc2
-globalSnapBoundingBox=false
+generatordialog/geometry=\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01g\x00\x00\x00\xa8\x00\x00\x04"\x00\x00\x02q\x00\x00\x01g\x00\x00\x00\xc4\x00\x00\x04"\x00\x00\x02q\x00\x00\x00\x00\x00\x00\x00\x00\x05V\x00\x00\x01g\x00\x00\x00\xc4\x00\x00\x04"\x00\x00\x02q
+globalSnapBoundingBox=true
 globalSnapExtension=false
-globalSnapImageBounds=false
+globalSnapImageBounds=true
 globalSnapImageCenter=false
 globalSnapIntersection=false
 globalSnapNode=false
 globalSnapOrthogonal=false
 globalSnapToPixel=false
+gridisoverticalcolor=150,150,150
+gridisoverticalstyle=0
 gridmaincolor=99,99,99
 gridmainstyle=0
 gridsubdivisioncolor=150,150,150
@@ -167,9 +177,9 @@ hideStatusbarFullScreen=true
 hideTitleBarFullscreen=false
 hideToolbarFullscreen=true
 ignoreHighFunctionKeys=true
-imageHeightDef=2928
+imageHeightDef=1440
 imageResolutionDef=300
-imageWidthDef=4096
+imageWidthDef=2560
 imagesizedlg_imsizeunit=px
 imagesizedlg_printSizeSeparatly=false
 imagesizedlg_ratioLock=true
@@ -187,7 +197,7 @@ longPressEnabled=false
 maxAllowedSpeedValue=30
 maxSwapSize=4096
 maximumBrushSize=1000
-mdiBackgroundColorXML=<!DOCTYPE color>\n<color channeldepth="U8">\n <RGB g="0.301960796117783" b="0.301960796117783" space="sRGB-elle-V2-srgbtrc.icc" r="0.301960796117783"/>\n</color>\n
+mdiBackgroundColorXML=<!DOCTYPE color>\n<color channeldepth="U8">\n <RGB space="sRGB-elle-V2-srgbtrc.icc" b="0.301960796117783" g="0.301960796117783" r="0.301960796117783"/>\n</color>\n
 mdiBackgroundImage=
 mdi_rubberband=1
 mdi_viewmode=1
@@ -196,8 +206,8 @@ memoryPoolLimitPercent=0
 memorySoftLimitPercent=2
 monitorProfile=sRGB-elle-V2-srgbtrc.icc
 monitorProfile/OverrideX11=false
-moveToolChangedValueX=2828
-moveToolChangedValueY=169
+moveToolChangedValueX=36
+moveToolChangedValueY=488
 moveToolUnit=0
 newCursorStyle=0
 newOutlineStyle=2
@@ -253,13 +263,17 @@ pasteBehaviour=0
 pasteFormat=3
 pixelGridColor=255,255,255
 pixelGridDrawingThreshold=24
+popuppalette/currentDocker=BrushHudDocker
+popuppalette/dockerList=BrushHudDocker,KisLayerBox
 popuppalette/selectorSize=140
 popuppalette/showColorHistory=true
 popuppalette/showRotationTrack=true
 popuppalette/size=385
 popuppalette/useDynamicSlotCount=true
 popuppalette/usevisualcolorselector=false
-presethistory=b) Basic-5 Size textured,b) Nwu-sketch2,t) Shapes Fill,!) Nwu Sketch textured,!) Nwu Sketch,b) Basic-5 Size Opacity,a) Eraser Soft,b) Airbrush Soft,h) Chalk Details,!) Nwu Paint
+preferredVectorImportResolution=100
+presetStripVisible=true
+presethistory=h) Chalk Details,!) Nwu Paint,u) Pixel Art Fill,b) Basic-5 Size textured,b) Nwu-sketch2,b) Basic-5 Size,t) Shapes Fill,!) Nwu Sketch textured,b) Basic-5 Size Opacity,a) Eraser Soft
 renameMergedLayers=true
 renamePastedLayers=true
 renderIntent=0
@@ -288,6 +302,7 @@ toolbarslider_1=opacity
 toolbarslider_2=size
 toolbarslider_3=flow
 toolbarslider_4=flow
+toolbarslider_5=flow
 touchPainting=0
 undoStackLimit=200
 useAnimationCacheFrameSizeLimit=true
@@ -318,6 +333,7 @@ SaveReferenceImageCollection=/home/nwugat/Pictures
 [FileDialogSize]
 1366x768 screen: Height=696
 1366x768 screen: Width=1366
+1366x768 screen: Window-Maximized=true
 
 [GenericGradientEditor]
 global/compactGradientPresetChooserMode=false
@@ -329,8 +345,8 @@ global/itemSizeCustom=32
 global/viewMode=icon
 
 [KFileDialog Settings]
-Recent Files[$e]=20251209-2226-sketch-suerte.kra,file:$HOME/archive/draw/2026/20260428-0156-sketches.kra,file:$HOME/archive/draw/2026/20260412-0122-nwugat-en-el-chino.kra,file:$HOME/archive/draw/2026/20260412-0138-suerte-panel.kra,file:$HOME/archive/draw/2026/20260203-1414-value-studies.kra,file:$HOME/archive/draw/2026/20260204-1730-sketches-faces.kra,file:$HOME/archive/draw/2026/20260208-1300-sketches.kra,file:$HOME/archive/draw/2026/20260218-1323-groceries.kra,file:$HOME/archive/draw/2026/20260222-0241-sketches.kra,file:$HOME/archive/draw/2026/20260227-0130-meet-the-artist.kra,file:$HOME/archive/draw/2026/20260413-1802-surte-perspectiva.kra,file:$HOME/archive/draw/2026/20260406-2315-nwugat-swing.kra,file:$HOME/archive/draw/2026/20260402-0254-suerte-sketches.kra,file:$HOME/archive/draw/2026/20260331-0241-suerte-bizarre.kra,file:$HOME/archive/draw/2026/20260310-1128-meet-the-artist.kra,file:$HOME/archive/draw/2026/20260331-0230-suerte.kra
-Recent URLs[$e]=file:$HOME/archive/draw/2026/,file:$HOME/archive/draw/2025/,file:$HOME/Desktop/,file:$HOME/archive/draw/exports/,file:$HOME/,file:$HOME/archive/draw/,file:$HOME/Documents/,file:$HOME/Pictures/,file:$HOME/Pictures/krita-exports/
+Recent Files[$e]=20251209-2226-sketch-suerte.kra,file:$HOME/archive/draw/2026/20260515-0019-nwugat-banner.kra,file:$HOME/archive/draw/2026/20260517-1342-sketch-traffic-character.kra,file:$HOME/archive/draw/2026/20260516-0341-sketch-psychohazard.kra,file:$HOME/archive/draw/2026/20260512-0147-sketches.kra,file:$HOME/archive/draw/2026/20260509-0114-suerte-duality.kra,file:$HOME/archive/draw/2026/20260510-2016-nwugat-model.kra,file:$HOME/archive/draw/2026/20260509-0350-sketches.kra,file:$HOME/archive/draw/2026/20260509-0337-emmi-sonas.kra,file:$HOME/archive/draw/2026/20260509-0228-sketches-sona.kra,file:$HOME/archive/draw/2026/20260509-0139-suerte-alerta.kra,file:$HOME/archive/draw/2026/20260504-0253-suerte-sketch-void.kra,file:$HOME/archive/draw/2026/20260504-0253-suerte-sketches.kra,file:$HOME/archive/draw/2026/20260504-0417-suerte-new-style.kra,file:$HOME/archive/draw/2026/20260507-0249-sketches-alt-styles.kra
+Recent URLs[$e]=file:$HOME/archive/draw/2026/,file:$HOME/archive/draw/2025/,file:$HOME/Desktop/,file:$HOME/archive/draw/exports/,file:$HOME/,file:$HOME/archive/draw/,file:$HOME/Documents/,file:$HOME/Pictures/,file:$HOME/Pictures/krita-exports/,file:$HOME/Downloads/
 detailViewIconSize=16
 
 [KisResourceItemChooser_paintoppresets]
@@ -345,14 +361,23 @@ allowGrow=true
 decoration=1
 growCenter=false
 
+[KisToolSelectBase]
+selectionMode=0
+
 [KisToolSelectContiguous]
-antiAliasSelection=false
-sampleLayersMode=sampleAllLayers
+antiAliasSelection=true
+colorLabels=1
+featherSelection=1
+growSelection=1
+sampleLayersMode=sampleColorLabeledLayers
 threshold=13
 
 [KisToolSelectElliptical]
 roundCornersX=0
 roundCornersY=0
+
+[KisToolSelectOutline]
+antiAliasSelection=false
 
 [KisToolSelectRectangular]
 roundCornersX=0
@@ -361,8 +386,8 @@ roundCornersY=0
 [KisToolSelectSimilar]
 featherSelection=1
 growSelection=1
-sampleLayersMode=sampleAllLayers
-threshold=12
+sampleLayersMode=sampleCurrentLayer
+threshold=7
 
 [KisToolTransform]
 filterId=Bicubic
@@ -370,9 +395,10 @@ forceLodMode=true
 useOverlayPreviewStyle=false
 
 [KritaFill/KisToolFill]
+colorLabels=6
 featherAmount=1
 growSelection=2
-sampleLayersMode=currentLayer
+sampleLayersMode=colorLabeledLayers
 
 [KritaFill/KisToolGradient]
 shape=0
@@ -408,46 +434,53 @@ useWashMode=false
 [MainWindow]
 1366x768 screen: Height=768
 1366x768 screen: Width=1366
-State=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NwAAABIAAAAAAAAAAPwAAAG2AAAAWgAAAAAA////+gAAAAABAAAAAvsAAAAuAEsAbwBTAGgAYQBwAGUAQwBvAGwAbABlAGMAdABpAG8AbgBEAG8AYwBrAGUAcgEAAAAA/////wAAAAAAAAAA+wAAACQAUwBtAGEAbABsAEMAbwBsAG8AcgBTAGUAbABlAGMAdABvAHIAAAADbgAAAQQAAABYAP////wAAABjAAABrgAAAOgBAAAd+gAAAAABAAAAAvsAAAAWAEsAaQBzAEwAYQB5AGUAcgBCAG8AeAEAAARUAAABAgAAAQIA////+wAAACAAcwBoAGEAcgBlAGQAdABvAG8AbABkAG8AYwBrAGUAcgEAAAAA/////wAAAFgA/////AAAAUYAAABpAAAAAAD////6AAAAAgEAAAAF+wAAACIAQwBvAG0AcABvAHMAaQB0AGkAbwBuAEQAbwBjAGsAZQByAAAAAAD/////AAAA3gD////7AAAADgBIAGkAcwB0AG8AcgB5AAAAAAD/////AAAAWAD////7AAAAFgBJAG0AYQBnAGUARABvAGMAawBlAHIAAAAAAP////8AAAAAAAAAAPsAAAAaAEMAaABhAG4AbgBlAGwARABvAGMAawBlAHIAAAAAAP////8AAABYAP////sAAAAuAEsAaQBzAFAAYQBpAG4AdABlAHIAbAB5AE0AaQB4AGUAcgBEAG8AYwBrAGUAcgAAAAAA/////wAAAAAAAAAA+wAAABgAUAByAGUAcwBlAHQARABvAGMAawBlAHIBAAACEgAAAMcAAAA5AP////sAAABIAEsAcgBpAHQAYQBTAGgAYQBwAGUALwBLAGkAcwBUAG8AbwBsAEIAcgB1AHMAaABvAHAAdABpAG8AbgAgAHcAaQBkAGcAZQB0AQAAA9wAAABoAAAAAAAAAAD7AAAAIgBTAHQAcgBvAGsAZQAgAFAAcgBvAHAAZQByAHQAaQBlAHMAAAAAAP////8AAAAAAAAAAPsAAAAWAFMAdAB5AGwAZQBEAG8AYwBrAGUAcgAAAAAA/////wAAAAAAAAAA+wAAACAASwBpAHMASABpAHMAdABvAGcAcgBhAG0ARABvAGMAawAAAAAA/////wAAAAAAAAAA+wAAABIAUwBjAHIAaQBwAHQAaQBuAGcAAAAAAP////8AAAAAAAAAAPsAAAAwAEQAZQBmAGEAdQBsAHQAVABvAG8AbABBAHIAcgBhAG4AZwBlAFcAaQBkAGcAZQB0AAAAArwAAABSAAAAAAAAAAD7AAAAIgBEAGUAZgBhAHUAbAB0AFQAbwBvAGwAVwBpAGQAZwBlAHQAAAADEQAAAFsAAAAAAAAAAPsAAAAkAEsAaQBzAEgAaQBzAHQAbwBnAHIAYQBtAEQAbwBjAGsAZQByAAAAAkIAAAB7AAAAAAAAAAD7AAAAGABEAGkAZwBpAHQAYQBsAE0AaQB4AGUAcgIAAAQoAAABEQAAAS4AAACV+wAAAE4ASwByAGkAdABhAEYAaQBsAGwALwBLAGkAcwBUAG8AbwBsAEcAcgBhAGQAaQBlAG4AdAAgAG8AcAB0AGkAbwBuACAAdwBpAGQAZwBlAHQAAAAEKAAAABwAAAAAAAAAAPsAAABGAEsAcgBpAHQAYQBGAGkAbABsAC8ASwBpAHMAVABvAG8AbABGAGkAbABsACAAbwBwAHQAaQBvAG4AIAB3AGkAZABnAGUAdAAAAANQAAAAHAAAAAAAAAAA+wAAADYASwByAGkAdABhAFMAaABhAHAAZQAvAEsAaQBzAFQAbwBvAGwAUgBlAGMAdABhAG4AZwBsAGUAAAADBQAAAGcAAAAAAAAAAPsAAAAqAEEAcgB0AGkAcwB0AGkAYwBDAG8AbABvAHIAUwBlAGwAZQBjAHQAbwByAAAAAAD/////AAAAegD////7AAAAGgBQAGEAdAB0AGUAcgBuAEQAbwBjAGsAZQByAAAAAtkAAAFJAAABMwAIABX7AAAAGgBUAGEAcwBrAHMAZQB0AEQAbwBjAGsAZQByAAAAAAD/////AAAAkQD////7AAAAKABTAG4AYQBwAEcAdQBpAGQAZQAgAFAAcgBvAHAAZQByAHQAaQBlAHMAAAAAAP////8AAAAAAAAAAPsAAAA4AFQAZQB4AHQARABvAGMAdQBtAGUAbgB0AEkAbgBzAHAAZQBjAHQAaQBvAG4ARABvAGMAawBlAHICAAAEmgAAAhUAAAEqAAAArvsAAAASAEwAdQB0AEQAbwBjAGsAZQByAAAAAAD/////AAABpQD////7AAAAFABHAHIAaQBkAEQAbwBjAGsAZQByAAAAAAD/////AAABMAD////7AAAAHgBIAGkAcwB0AG8AZwByAGEAbQBEAG8AYwBrAGUAcgAAAAAA/////wAAAEoA////+wAAABoAUAByAGUAcwBlAHQASABpAHMAdABvAHIAeQAAAAAA/////wAAAGkA////+wAAABoAQQByAHIAYQBuAGcAZQBEAG8AYwBrAGUAcgAAAAAA/////wAAADUA////+wAAACoAQQBuAGkAbQBhAHQAaQBvAG4AQwB1AHIAdgBlAHMARABvAGMAawBlAHIAAAAAAP////8AAAB1AP////sAAAAQAFMAbgBhAHAAcwBoAG8AdAAAAAAA/////wAAAJEA////+wAAABIATABvAGcARABvAGMAawBlAHIAAAAAAP////8AAACTAP////sAAAAmAGwAYQBzAHQAZABvAGMAdQBtAGUAbgB0AHMAZABvAGMAawBlAHIAAAAAAP////8AAACXAP////sAAAAcAFIAZQBjAG8AcgBkAGUAcgBEAG8AYwBrAGUAcgAAAAAA/////wAAAGsA////+wAAACAAUwB0AG8AcgB5AGIAbwBhAHIAZABEAG8AYwBrAGUAcgAAAAAA/////wAAALoA////+wAAADIAUwB2AGcAUwB5AG0AYgBvAGwAQwBvAGwAbABlAGMAdABpAG8AbgBEAG8AYwBrAGUAcgAAAAAA/////wAAAJEA////+wAAADoAYwBvAG0AaQBjAHMAXwBwAHIAbwBqAGUAYwB0AF8AbQBhAG4AYQBnAGUAcgBfAGQAbwBjAGsAZQByAAAAAAD/////AAAA4wD////7AAAAEgBHAGEAbQB1AHQATQBhAHMAawAAAAAA/////wAAAM0A////+wAAABYAVABvAHUAYwBoAEQAbwBjAGsAZQByAAAAAAD/////AAAAGAD////7AAAALABXAGkAZABlAEcAYQBtAHUAdABDAG8AbABvAHIAUwBlAGwAZQBjAHQAbwByAAAAAAD/////AAAAtwD////7AAAAKgBxAHUAaQBjAGsAXwBzAGUAdAB0AGkAbgBnAHMAXwBkAG8AYwBrAGUAcgAAAAAA/////wAAAI8A////AAAAAgAABVYAAAAY/AEAAAAC+wAAAA4AVABvAG8AbABCAG8AeAEAAAAAAAAFVgAAACkA////+wAAABoAVABvAG8AbABCAGEAcgBEAG8AYwBrAGUAcgAAAAAA/////wAAAAAAAAAAAAAAAwAAAAAAAAAA/AEAAAAE+wAAABwARgBsAGkAcABiAG8AbwBrAEQAbwBjAGsAZQByAAAAAAD/////AAAAAAAAAAD7AAAAIABPAG4AaQBvAG4AUwBrAGkAbgBzAEQAbwBjAGsAZQByAAAAAAD/////AAABnwD////7AAAAHgBBAG4AaQBtAGEAdABpAG8AbgBEAG8AYwBrAGUAcgAAAAAA/////wAAAAAAAAAA+wAAABwAVABpAG0AZQBsAGkAbgBlAEQAbwBjAGsAZQByAAAAAAD/////AAADsQD///8AAAOAAAACdgAAAAQAAAAEAAAACAAAAAj8AAAAAQAAAAIAAAADAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAAB4AQgByAHUAcwBoAGUAcwBBAG4AZABTAHQAdQBmAGYBAAAAbP////8AAAAAAAAAAAAAABYAZQBkAGkAdABUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAA=
-ToolBarsMovable=Disabled
-ko_geometry=AdnQywADAAAAAAAAAAAAAAAABVUAAAL/AAABWAAAABwAAATlAAACSQAAAAACBAAABVYAAAAAAAAAAAAABVUAAAL/
+State=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NwAAABIAAAAAAAAAAPwAAAG2AAAAWgAAAAAA////+gAAAAABAAAAAvsAAAAuAEsAbwBTAGgAYQBwAGUAQwBvAGwAbABlAGMAdABpAG8AbgBEAG8AYwBrAGUAcgEAAAAA/////wAAAAAAAAAA+wAAACQAUwBtAGEAbABsAEMAbwBsAG8AcgBTAGUAbABlAGMAdABvAHIAAAADbgAAAQQAAABYAP////wAAABtAAACbAAAAOgBAAAd+gAAAAABAAAAA/sAAAAWAEsAaQBzAEwAYQB5AGUAcgBCAG8AeAEAAARUAAABAgAAAQIA////+wAAABgAUAByAGUAcwBlAHQARABvAGMAawBlAHIBAAAAAP////8AAABmAP////sAAAAgAHMAaABhAHIAZQBkAHQAbwBvAGwAZABvAGMAawBlAHIBAAAAAP////8AAABYAP////wAAAFGAAAAaQAAAAAA////+gAAAAIBAAAABfsAAAAiAEMAbwBtAHAAbwBzAGkAdABpAG8AbgBEAG8AYwBrAGUAcgAAAAAA/////wAAAN4A////+wAAAA4ASABpAHMAdABvAHIAeQAAAAAA/////wAAAFgA////+wAAABYASQBtAGEAZwBlAEQAbwBjAGsAZQByAAAAAAD/////AAAAAAAAAAD7AAAAGgBDAGgAYQBuAG4AZQBsAEQAbwBjAGsAZQByAAAAAAD/////AAAAWQD////7AAAALgBLAGkAcwBQAGEAaQBuAHQAZQByAGwAeQBNAGkAeABlAHIARABvAGMAawBlAHIAAAAAAP////8AAAAAAAAAAPsAAABIAEsAcgBpAHQAYQBTAGgAYQBwAGUALwBLAGkAcwBUAG8AbwBsAEIAcgB1AHMAaABvAHAAdABpAG8AbgAgAHcAaQBkAGcAZQB0AQAAA9wAAABoAAAAAAAAAAD7AAAAIgBTAHQAcgBvAGsAZQAgAFAAcgBvAHAAZQByAHQAaQBlAHMAAAAAAP////8AAAAAAAAAAPsAAAAWAFMAdAB5AGwAZQBEAG8AYwBrAGUAcgAAAAAA/////wAAAAAAAAAA+wAAACAASwBpAHMASABpAHMAdABvAGcAcgBhAG0ARABvAGMAawAAAAAA/////wAAAAAAAAAA+wAAABIAUwBjAHIAaQBwAHQAaQBuAGcAAAAAAP////8AAAAAAAAAAPsAAAAwAEQAZQBmAGEAdQBsAHQAVABvAG8AbABBAHIAcgBhAG4AZwBlAFcAaQBkAGcAZQB0AAAAArwAAABSAAAAAAAAAAD7AAAAIgBEAGUAZgBhAHUAbAB0AFQAbwBvAGwAVwBpAGQAZwBlAHQAAAADEQAAAFsAAAAAAAAAAPsAAAAkAEsAaQBzAEgAaQBzAHQAbwBnAHIAYQBtAEQAbwBjAGsAZQByAAAAAkIAAAB7AAAAAAAAAAD7AAAAGABEAGkAZwBpAHQAYQBsAE0AaQB4AGUAcgIAAAQcAAABEQAAAToAAADN+wAAAE4ASwByAGkAdABhAEYAaQBsAGwALwBLAGkAcwBUAG8AbwBsAEcAcgBhAGQAaQBlAG4AdAAgAG8AcAB0AGkAbwBuACAAdwBpAGQAZwBlAHQAAAAEKAAAABwAAAAAAAAAAPsAAABGAEsAcgBpAHQAYQBGAGkAbABsAC8ASwBpAHMAVABvAG8AbABGAGkAbABsACAAbwBwAHQAaQBvAG4AIAB3AGkAZABnAGUAdAAAAANQAAAAHAAAAAAAAAAA+wAAADYASwByAGkAdABhAFMAaABhAHAAZQAvAEsAaQBzAFQAbwBvAGwAUgBlAGMAdABhAG4AZwBsAGUAAAADBQAAAGcAAAAAAAAAAPsAAAAqAEEAcgB0AGkAcwB0AGkAYwBDAG8AbABvAHIAUwBlAGwAZQBjAHQAbwByAAAAAAD/////AAAAegD////7AAAAGgBQAGEAdAB0AGUAcgBuAEQAbwBjAGsAZQByAAAAAtkAAAFJAAABMgAIABX7AAAAGgBUAGEAcwBrAHMAZQB0AEQAbwBjAGsAZQByAAAAAAD/////AAAAkQD////7AAAAKABTAG4AYQBwAEcAdQBpAGQAZQAgAFAAcgBvAHAAZQByAHQAaQBlAHMAAAAAAP////8AAAAAAAAAAPsAAAA4AFQAZQB4AHQARABvAGMAdQBtAGUAbgB0AEkAbgBzAHAAZQBjAHQAaQBvAG4ARABvAGMAawBlAHICAAAEmgAAAhUAAAEqAAAArvsAAAASAEwAdQB0AEQAbwBjAGsAZQByAAAAAAD/////AAABgAD////7AAAAFABHAHIAaQBkAEQAbwBjAGsAZQByAAAAAAD/////AAABMAD////7AAAAHgBIAGkAcwB0AG8AZwByAGEAbQBEAG8AYwBrAGUAcgAAAAAA/////wAAAEoA////+wAAABoAUAByAGUAcwBlAHQASABpAHMAdABvAHIAeQAAAAAA/////wAAAGkA////+wAAABoAQQByAHIAYQBuAGcAZQBEAG8AYwBrAGUAcgAAAAAA/////wAAADUA////+wAAACoAQQBuAGkAbQBhAHQAaQBvAG4AQwB1AHIAdgBlAHMARABvAGMAawBlAHIAAAAAAP////8AAAB1AP////sAAAAQAFMAbgBhAHAAcwBoAG8AdAAAAAAA/////wAAAJEA////+wAAABIATABvAGcARABvAGMAawBlAHIAAAAAAP////8AAACRAP////sAAAAmAGwAYQBzAHQAZABvAGMAdQBtAGUAbgB0AHMAZABvAGMAawBlAHIAAAAAAP////8AAAAAAAAAAPsAAAAcAFIAZQBjAG8AcgBkAGUAcgBEAG8AYwBrAGUAcgAAAAAA/////wAAAGsA////+wAAACAAUwB0AG8AcgB5AGIAbwBhAHIAZABEAG8AYwBrAGUAcgAAAAAA/////wAAAOMA////+wAAADIAUwB2AGcAUwB5AG0AYgBvAGwAQwBvAGwAbABlAGMAdABpAG8AbgBEAG8AYwBrAGUAcgAAAAAA/////wAAAJUA////+wAAADoAYwBvAG0AaQBjAHMAXwBwAHIAbwBqAGUAYwB0AF8AbQBhAG4AYQBnAGUAcgBfAGQAbwBjAGsAZQByAAAAAAD/////AAAAAAAAAAD7AAAAEgBHAGEAbQB1AHQATQBhAHMAawAAAAAA/////wAAAM0A////+wAAABYAVABvAHUAYwBoAEQAbwBjAGsAZQByAAAAAAD/////AAABRAD////7AAAALABXAGkAZABlAEcAYQBtAHUAdABDAG8AbABvAHIAUwBlAGwAZQBjAHQAbwByAAAAAAD/////AAAA4gD////7AAAAKgBxAHUAaQBjAGsAXwBzAGUAdAB0AGkAbgBnAHMAXwBkAG8AYwBrAGUAcgAAAAAA/////wAAAAAAAAAA+wAAABwAVABlAHgAdABQAHIAbwBwAGUAcgB0AGkAZQBzAAAAAAD/////AAAAegD////7AAAAHABCAHIAdQBzAGgASAB1AGQARABvAGMAawBlAHIAAAAAAP////8AAACbAP///wAAAAIAAAVWAAAAIvwBAAAAAvsAAAAOAFQAbwBvAGwAQgBvAHgBAAAAAAAABVYAAAApAP////sAAAAaAFQAbwBvAGwAQgBhAHIARABvAGMAawBlAHIAAAAAAP////8AAAAAAAAAAAAAAAMAAAAAAAAAAPwBAAAABPsAAAAcAEYAbABpAHAAYgBvAG8AawBEAG8AYwBrAGUAcgAAAAAA/////wAAAAAAAAAA+wAAACAATwBuAGkAbwBuAFMAawBpAG4AcwBEAG8AYwBrAGUAcgAAAAAA/////wAAAYoA////+wAAAB4AQQBuAGkAbQBhAHQAaQBvAG4ARABvAGMAawBlAHIAAAAAAP////8AAAAAAAAAAPsAAAAcAFQAaQBtAGUAbABpAG4AZQBEAG8AYwBrAGUAcgAAAAAA/////wAAA8EA////AAADDQAAAmwAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAABQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAAAAAAeAEIAcgB1AHMAaABlAHMAQQBuAGQAUwB0AHUAZgBmAQAAAGz/////AAAAAAAAAAAAAAAWAGUAZABpAHQAVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAHABjAHUAcwB0AG8AbQBUAG8AbwBsAEIAYQByADEAAAAAAP////8AAAAAAAAAAAAAABwAYwB1AHMAdABvAG0AVABvAG8AbABCAGEAcgAyAAAAAAD/////AAAAAAAAAAA=
+ko_geometry=AdnQywADAAAAAAAAAAAAAAAABVUAAAL/AAABWAAAABwAAATlAAACSQAAAAAABAAABVYAAAAAAAAAAAAABVUAAAL/
 
 [MainWindow][DockWidget AnimationCurvesDocker]
 DockArea=2
 Locked=false
-height=480
-width=640
+height=448
+width=1359
 xPosition=0
-yPosition=0
+yPosition=32
 
 [MainWindow][DockWidget ArrangeDocker]
 DockArea=2
 Locked=false
-height=264
-width=222
+height=458
+width=640
 xPosition=0
-yPosition=0
+yPosition=22
 
 [MainWindow][DockWidget ArtisticColorSelector]
 DockArea=2
 Locked=false
-height=284
-width=334
+height=458
+width=640
 xPosition=0
-yPosition=0
+yPosition=22
+
+[MainWindow][DockWidget BrushHudDocker]
+DockArea=2
+Locked=false
+height=328
+width=241
+xPosition=6
+yPosition=51
 
 [MainWindow][DockWidget ChannelDocker]
 DockArea=2
 Locked=false
-height=30
-width=100
+height=458
+width=640
 xPosition=0
-yPosition=0
+yPosition=22
 
 [MainWindow][DockWidget ColorSelectorNg]
 DockArea=1
 Locked=false
-height=388
+height=382
 width=210
 xPosition=0
 yPosition=22
@@ -455,34 +488,34 @@ yPosition=22
 [MainWindow][DockWidget CompositionDocker]
 DockArea=2
 Locked=false
-height=300
-width=400
+height=458
+width=640
 xPosition=0
-yPosition=0
+yPosition=22
 
 [MainWindow][DockWidget DigitalMixer]
 DockArea=2
 Locked=false
-height=30
-width=100
+height=183
+width=314
 xPosition=0
-yPosition=0
+yPosition=22
 
 [MainWindow][DockWidget GamutMask]
 DockArea=2
 Locked=false
-height=322
-width=363
+height=458
+width=640
 xPosition=0
-yPosition=0
+yPosition=22
 
 [MainWindow][DockWidget GridDocker]
 DockArea=2
 Locked=false
-height=527
-width=258
+height=458
+width=640
 xPosition=0
-yPosition=0
+yPosition=22
 
 [MainWindow][DockWidget HistogramDocker]
 DockArea=2
@@ -503,39 +536,39 @@ yPosition=22
 [MainWindow][DockWidget KisLayerBox]
 DockArea=2
 Locked=false
-height=378
-width=258
+height=568
+width=373
 xPosition=0
 yPosition=22
 
 [MainWindow][DockWidget LogDocker]
 DockArea=2
 Locked=false
-height=260
-width=400
+height=458
+width=640
 xPosition=0
-yPosition=0
+yPosition=22
 
 [MainWindow][DockWidget LutDocker]
 DockArea=2
 Locked=false
-height=328
-width=357
+height=458
+width=640
 xPosition=0
-yPosition=0
+yPosition=22
 
 [MainWindow][DockWidget OnionSkinsDocker]
 DockArea=8
 Locked=false
-height=282
-width=336
-xPosition=0
-yPosition=0
+height=328
+width=547
+xPosition=6
+yPosition=51
 
 [MainWindow][DockWidget OverviewDocker]
 DockArea=1
 Locked=false
-height=167
+height=163
 width=210
 xPosition=0
 yPosition=22
@@ -543,42 +576,42 @@ yPosition=22
 [MainWindow][DockWidget PaletteDocker]
 DockArea=1
 Locked=false
-height=422
-width=340
+height=458
+width=640
 xPosition=0
-yPosition=0
+yPosition=22
 
 [MainWindow][DockWidget PatternDocker]
 DockArea=2
 Locked=false
-height=285
-width=178
+height=458
+width=640
 xPosition=0
-yPosition=0
+yPosition=22
 
 [MainWindow][DockWidget PresetDocker]
 DockArea=2
 Locked=false
-height=177
-width=258
+height=458
+width=640
 xPosition=0
 yPosition=22
 
 [MainWindow][DockWidget PresetHistory]
 DockArea=2
 Locked=false
-height=30
-width=100
+height=458
+width=640
 xPosition=0
-yPosition=0
+yPosition=22
 
 [MainWindow][DockWidget RecorderDocker]
 DockArea=2
 Locked=false
-height=369
-width=277
+height=458
+width=640
 xPosition=0
-yPosition=0
+yPosition=22
 
 [MainWindow][DockWidget SmallColorSelector]
 DockArea=2
@@ -591,26 +624,26 @@ yPosition=22
 [MainWindow][DockWidget Snapshot]
 DockArea=2
 Locked=false
-height=30
-width=100
+height=458
+width=640
 xPosition=0
-yPosition=0
+yPosition=22
 
 [MainWindow][DockWidget SpecificColorSelector]
 DockArea=1
 Locked=false
-height=388
-width=210
+height=458
+width=640
 xPosition=0
 yPosition=22
 
 [MainWindow][DockWidget StoryboardDocker]
 DockArea=2
 Locked=false
-height=561
-width=604
+height=458
+width=640
 xPosition=0
-yPosition=0
+yPosition=22
 
 [MainWindow][DockWidget SvgSymbolCollectionDocker]
 DockArea=2
@@ -623,23 +656,31 @@ yPosition=22
 [MainWindow][DockWidget TasksetDocker]
 DockArea=2
 Locked=false
-height=300
-width=400
+height=458
+width=640
 xPosition=0
-yPosition=0
+yPosition=22
+
+[MainWindow][DockWidget TextProperties]
+DockArea=2
+Locked=false
+height=458
+width=640
+xPosition=0
+yPosition=22
 
 [MainWindow][DockWidget TimelineDocker]
 DockArea=8
 Locked=false
-height=50
-width=100
+height=448
+width=961
 xPosition=0
-yPosition=0
+yPosition=32
 
 [MainWindow][DockWidget ToolBox]
 DockArea=4
 Locked=false
-height=24
+height=34
 width=1349
 xPosition=17
 yPosition=0
@@ -647,18 +688,18 @@ yPosition=0
 [MainWindow][DockWidget TouchDocker]
 DockArea=2
 Locked=false
-height=341
-width=116
+height=458
+width=640
 xPosition=0
-yPosition=0
+yPosition=22
 
 [MainWindow][DockWidget WideGamutColorSelector]
 DockArea=2
 Locked=false
-height=480
+height=458
 width=640
 xPosition=0
-yPosition=0
+yPosition=22
 
 [MainWindow][DockWidget comics_project_manager_docker]
 DockArea=2
@@ -687,8 +728,8 @@ yPosition=22
 [MainWindow][DockWidget sharedtooldocker]
 DockArea=2
 Locked=false
-height=378
-width=258
+height=458
+width=640
 xPosition=0
 yPosition=22
 
@@ -698,6 +739,7 @@ pinControls=false
 [RecentFiles]
 File1[$e]=$HOME/archive/draw/2025/20251212-1030-kofi-doodle-demo.kra
 File10[$e]=$HOME/archive/draw/2025/20251220-grey-circus-sketch.kra
+File100[$e]=$HOME/archive/draw/2026/20260509-0114-suerte-duality.kra
 File11[$e]=$HOME/archive/draw/2025/20251220-0029-suerte-game-mockup-room.kra
 File12[$e]=$HOME/archive/draw/2025/20251214-1756-bianca-xmas.kra
 File13[$e]=$HOME/archive/draw/2025/20251220-0057-hands-practice.kra
@@ -723,53 +765,81 @@ File30[$e]=$HOME/archive/draw/2026/20260104-0227-sketches.kra
 File31[$e]=$HOME/archive/draw/2026/20260129-1743-sketches.kra
 File32[$e]=$HOME/archive/draw/2026/20260130-0137-poses.kra
 File33[$e]=$HOME/archive/draw/2025/20251213-1022-style-study.kra
-File34[$e]=$HOME/archive/draw/2025/20251209-2226-sketch-suerte.kra
-File35[$e]=$HOME/archive/draw/2026/20260131-0114-sketches-suerte.kra
-File36[$e]=$HOME/archive/draw/2026/20260201-1814-sketches.kra
-File37[$e]=$HOME/archive/draw/2025/20251206-0216-sketches-sus.kra
-File38[$e]=$HOME/archive/draw/2025/20251220-0028-suerte-floating-sketch.kra
-File39[$e]=$HOME/archive/draw/2026/20260210-0130-sketches.kra
+File34[$e]=$HOME/archive/draw/2026/20260131-0114-sketches-suerte.kra
+File35[$e]=$HOME/archive/draw/2026/20260201-1814-sketches.kra
+File36[$e]=$HOME/archive/draw/2025/20251220-0028-suerte-floating-sketch.kra
+File37[$e]=$HOME/archive/draw/2026/20260210-0130-sketches.kra
+File38[$e]=$HOME/archive/draw/2026/20260217-1949-sketches.kra
+File39[$e]=$HOME/archive/draw/2026/20260211-0201-sketches.kra
 File4[$e]=$HOME/archive/draw/2025/20251212-1239-kofi-yt-thumb-demo-2.kra
-File40[$e]=$HOME/archive/draw/2026/20260217-1949-sketches.kra
-File41[$e]=$HOME/archive/draw/2026/20260211-0201-sketches.kra
-File42[$e]=$HOME/archive/draw/2026/20260201-0101-sketches.kra
-File43[$e]=$HOME/archive/draw/2026/20260123-1247-suerte-sketch.kra
-File44[$e]=$HOME/archive/draw/2026/20260117-0237-bianca-salute.kra
-File45[$e]=$HOME/archive/draw/2026/20260117-0206-suerte-coffee.kra
-File46[$e]=$HOME/archive/draw/2025/20250917a-nwugat-expressions.kra
-File47[$e]=$HOME/archive/draw/2026/20260110-1301-sketches-nwugat.kra
-File48[$e]=$HOME/archive/draw/2026/20260120-0344-oc-faces.kra
-File49[$e]=$HOME/archive/draw/2026/20260226-0226-sketches.kra
+File40[$e]=$HOME/archive/draw/2026/20260201-0101-sketches.kra
+File41[$e]=$HOME/archive/draw/2026/20260123-1247-suerte-sketch.kra
+File42[$e]=$HOME/archive/draw/2026/20260117-0237-bianca-salute.kra
+File43[$e]=$HOME/archive/draw/2026/20260117-0206-suerte-coffee.kra
+File44[$e]=$HOME/archive/draw/2025/20250917a-nwugat-expressions.kra
+File45[$e]=$HOME/archive/draw/2026/20260110-1301-sketches-nwugat.kra
+File46[$e]=$HOME/archive/draw/2026/20260120-0344-oc-faces.kra
+File47[$e]=$HOME/archive/draw/2026/20260226-0226-sketches.kra
+File48[$e]=$HOME/archive/draw/2025/20250825a-logo.kra
+File49[$e]=$HOME/archive/draw/2025/20250810_1-nwugat.kra
 File5[$e]=$HOME/archive/draw/exports/20251124-0126-suerte-redraw-white-void.png
-File50[$e]=$HOME/archive/draw/2025/20250825a-logo.kra
-File51[$e]=$HOME/archive/draw/2025/20250810_1-nwugat.kra
-File52[$e]=$HOME/archive/draw/2026/20260302-024835-character-concept.kra
-File53[$e]=$HOME/Pictures/document_0.kra
-File54[$e]=$HOME/archive/draw/2025/20251105g-nwugat-expressions.kra
-File55[$e]=$HOME/archive/draw/2026/20260224-0305-sketches.kra
-File56[$e]=$HOME/archive/draw/2026/20260324-0226-suerte-sketches.kra
-File57[$e]=$HOME/archive/draw/2026/20260331-0241-suerte-bizarre.kra
-File58[$e]=$HOME/archive/draw/2026/20260402-0254-suerte-sketches.kra
-File59[$e]=$HOME/archive/draw/2026/20260406-2315-nwugat-swing.kra
+File50[$e]=$HOME/archive/draw/2026/20260302-024835-character-concept.kra
+File51[$e]=$HOME/Pictures/document_0.kra
+File52[$e]=$HOME/archive/draw/2025/20251105g-nwugat-expressions.kra
+File53[$e]=$HOME/archive/draw/2026/20260224-0305-sketches.kra
+File54[$e]=$HOME/archive/draw/2026/20260324-0226-suerte-sketches.kra
+File55[$e]=$HOME/archive/draw/2026/20260331-0241-suerte-bizarre.kra
+File56[$e]=$HOME/archive/draw/2026/20260406-2315-nwugat-swing.kra
+File57[$e]=$HOME/archive/draw/2026/20260310-1128-meet-the-artist.kra
+File58[$e]=$HOME/archive/draw/2026/20260413-1802-surte-perspectiva.kra
+File59[$e]=$HOME/archive/draw/2026/20260331-0230-suerte.kra
 File6[$e]=$HOME/archive/draw/exports/20251212-1239-kofi-yt-thumb-demo-1.png
-File60[$e]=$HOME/archive/draw/2026/20260310-1128-meet-the-artist.kra
-File61[$e]=$HOME/archive/draw/2026/20260413-1802-surte-perspectiva.kra
-File62[$e]=$HOME/archive/draw/2026/20260331-0230-suerte.kra
-File63[$e]=$HOME/archive/draw/2026/20260227-0130-meet-the-artist.kra
-File64[$e]=$HOME/archive/draw/2026/20260222-0241-sketches.kra
-File65[$e]=$HOME/archive/draw/2026/20260218-1323-groceries.kra
-File66[$e]=$HOME/archive/draw/2026/20260208-1300-sketches.kra
-File67[$e]=$HOME/archive/draw/2026/20260204-1730-sketches-faces.kra
-File68[$e]=$HOME/archive/draw/2026/20260203-1414-value-studies.kra
-File69[$e]=$HOME/archive/draw/2025/20251024a-suerte-model-sheet.kra
+File60[$e]=$HOME/archive/draw/2026/20260227-0130-meet-the-artist.kra
+File61[$e]=$HOME/archive/draw/2026/20260222-0241-sketches.kra
+File62[$e]=$HOME/archive/draw/2026/20260218-1323-groceries.kra
+File63[$e]=$HOME/archive/draw/2026/20260208-1300-sketches.kra
+File64[$e]=$HOME/archive/draw/2026/20260204-1730-sketches-faces.kra
+File65[$e]=$HOME/archive/draw/2026/20260203-1414-value-studies.kra
+File66[$e]=$HOME/archive/draw/2025/20251024a-suerte-model-sheet.kra
+File67[$e]=$HOME/archive/draw/2026/20260412-0138-suerte-panel.kra
+File68[$e]=$HOME/archive/draw/2026/20260412-0122-nwugat-en-el-chino.kra
+File69[$e]=$HOME/archive/draw/2026/20260428-0156-sketches.kra
 File7[$e]=$HOME/archive/draw/exports/20251212-1239-kofi-yt-thumb-demo-2.png
-File70[$e]=$HOME/archive/draw/2026/20260412-0138-suerte-panel.kra
-File71[$e]=$HOME/archive/draw/2026/20260412-0122-nwugat-en-el-chino.kra
-File72[$e]=$HOME/archive/draw/2026/20260428-0156-sketches.kra
+File70[$e]=$HOME/archive/draw/2026/20260504-0253-suerte-sketch-void.kra
+File71[$e]=$HOME/archive/draw/2026/20260504-0253-suerte-sketches.kra
+File72[$e]=$HOME/archive/draw/2026/20260504-0417-suerte-new-style.kra
+File73[$e]=$HOME/archive/draw/2026/20260507-0249-sketches-alt-styles.kra
+File74[$e]=$HOME/archive/draw/2026/20260509-0337-emmi-sonas.kra
+File75[$e]=$HOME/archive/draw/2026/20260509-0350-sketches.kra
+File76[$e]=$HOME/archive/draw/2026/20260509-0228-sketches-sona.kra
+File77[$e]=$HOME/archive/draw/2026/20260509-0139-suerte-alerta.kra
+File78[$e]=$HOME/archive/draw/2026/20260510-2016-nwugat-model.kra
+File79[$e]=$HOME/archive/draw/2026/20260512-0147-sketches.kra
 File8[$e]=$HOME/archive/draw/2025/20251124-0126-suerte-redraw.kra
+File80[$e]=$HOME/archive/draw/2025/20250628-234627-sketches-discord.kra
+File81[$e]=$HOME/archive/draw/2025/20250629-012939-sketches-discord.kra
+File82[$e]=$HOME/archive/draw/2025/20250703-015752-sketches-discord.kra
+File83[$e]=$HOME/archive/draw/2025/20250703-015806-sketches-discord.kra
+File84[$e]=$HOME/archive/draw/2025/20250703-040931-sketches-discord.kra
+File85[$e]=$HOME/archive/draw/2025/20250711-003155-sketches.kra
+File86[$e]=$HOME/archive/draw/2025/20250723_1-sketches.kra
+File87[$e]=$HOME/archive/draw/2025/20250816_2-sketches.kra
+File88[$e]=$HOME/archive/draw/2025/20250824a-sketches.kra
+File89[$e]=$HOME/archive/draw/2025/20250828b-sketches-suerte.kra
 File9[$e]=$HOME/archive/draw/2025/20251216-1753-doodles.kra
+File90[$e]=$HOME/archive/draw/2025/20250829a-practice-body-proportions.kra
+File91[$e]=$HOME/archive/draw/2025/20250831b-figures.kra
+File92[$e]=$HOME/archive/draw/2025/20250926-gestures.kra
+File93[$e]=$HOME/archive/draw/2025/20251022a-sketches.kra
+File94[$e]=$HOME/archive/draw/2025/20251206-0216-sketches-sus.kra
+File95[$e]=$HOME/archive/draw/2025/20251209-2226-sketch-suerte.kra
+File96[$e]=$HOME/archive/draw/2026/20260402-0254-suerte-sketches.kra
+File97[$e]=$HOME/archive/draw/2026/20260516-0341-sketch-psychohazard.kra
+File98[$e]=$HOME/archive/draw/2026/20260517-1342-sketch-traffic-character.kra
+File99[$e]=$HOME/archive/draw/2026/20260515-0019-nwugat-banner.kra
 Name1=20251212-1030-kofi-doodle-demo.kra
 Name10=20251220-grey-circus-sketch.kra
+Name100=20260509-0114-suerte-duality.kra
 Name11=20251220-0029-suerte-game-mockup-room.kra
 Name12=20251214-1756-bianca-xmas.kra
 Name13=20251220-0057-hands-practice.kra
@@ -795,51 +865,78 @@ Name30=20260104-0227-sketches.kra
 Name31=20260129-1743-sketches.kra
 Name32=20260130-0137-poses.kra
 Name33=20251213-1022-style-study.kra
-Name34=20251209-2226-sketch-suerte.kra
-Name35=20260131-0114-sketches-suerte.kra
-Name36=20260201-1814-sketches.kra
-Name37=20251206-0216-sketches-sus.kra
-Name38=20251220-0028-suerte-floating-sketch.kra
-Name39=20260210-0130-sketches.kra
+Name34=20260131-0114-sketches-suerte.kra
+Name35=20260201-1814-sketches.kra
+Name36=20251220-0028-suerte-floating-sketch.kra
+Name37=20260210-0130-sketches.kra
+Name38=20260217-1949-sketches.kra
+Name39=20260211-0201-sketches.kra
 Name4=20251212-1239-kofi-yt-thumb-demo-2.kra
-Name40=20260217-1949-sketches.kra
-Name41=20260211-0201-sketches.kra
-Name42=20260201-0101-sketches.kra
-Name43=20260123-1247-suerte-sketch.kra
-Name44=20260117-0237-bianca-salute.kra
-Name45=20260117-0206-suerte-coffee.kra
-Name46=20250917a-nwugat-expressions.kra
-Name47=20260110-1301-sketches-nwugat.kra
-Name48=20260120-0344-oc-faces.kra
-Name49=20260226-0226-sketches.kra
+Name40=20260201-0101-sketches.kra
+Name41=20260123-1247-suerte-sketch.kra
+Name42=20260117-0237-bianca-salute.kra
+Name43=20260117-0206-suerte-coffee.kra
+Name44=20250917a-nwugat-expressions.kra
+Name45=20260110-1301-sketches-nwugat.kra
+Name46=20260120-0344-oc-faces.kra
+Name47=20260226-0226-sketches.kra
+Name48=20250825a-logo.kra
+Name49=20250810_1-nwugat.kra
 Name5=20251124-0126-suerte-redraw-white-void.png
-Name50=20250825a-logo.kra
-Name51=20250810_1-nwugat.kra
-Name52=20260302-024835-character-concept.kra
-Name53=document_0.kra
-Name54=20251105g-nwugat-expressions.kra
-Name55=20260224-0305-sketches.kra
-Name56=20260324-0226-suerte-sketches.kra
-Name57=20260331-0241-suerte-bizarre.kra
-Name58=20260402-0254-suerte-sketches.kra
-Name59=20260406-2315-nwugat-swing.kra
+Name50=20260302-024835-character-concept.kra
+Name51=document_0.kra
+Name52=20251105g-nwugat-expressions.kra
+Name53=20260224-0305-sketches.kra
+Name54=20260324-0226-suerte-sketches.kra
+Name55=20260331-0241-suerte-bizarre.kra
+Name56=20260406-2315-nwugat-swing.kra
+Name57=20260310-1128-meet-the-artist.kra
+Name58=20260413-1802-surte-perspectiva.kra
+Name59=20260331-0230-suerte.kra
 Name6=20251212-1239-kofi-yt-thumb-demo-1.png
-Name60=20260310-1128-meet-the-artist.kra
-Name61=20260413-1802-surte-perspectiva.kra
-Name62=20260331-0230-suerte.kra
-Name63=20260227-0130-meet-the-artist.kra
-Name64=20260222-0241-sketches.kra
-Name65=20260218-1323-groceries.kra
-Name66=20260208-1300-sketches.kra
-Name67=20260204-1730-sketches-faces.kra
-Name68=20260203-1414-value-studies.kra
-Name69=20251024a-suerte-model-sheet.kra
+Name60=20260227-0130-meet-the-artist.kra
+Name61=20260222-0241-sketches.kra
+Name62=20260218-1323-groceries.kra
+Name63=20260208-1300-sketches.kra
+Name64=20260204-1730-sketches-faces.kra
+Name65=20260203-1414-value-studies.kra
+Name66=20251024a-suerte-model-sheet.kra
+Name67=20260412-0138-suerte-panel.kra
+Name68=20260412-0122-nwugat-en-el-chino.kra
+Name69=20260428-0156-sketches.kra
 Name7=20251212-1239-kofi-yt-thumb-demo-2.png
-Name70=20260412-0138-suerte-panel.kra
-Name71=20260412-0122-nwugat-en-el-chino.kra
-Name72=20260428-0156-sketches.kra
+Name70=20260504-0253-suerte-sketch-void.kra
+Name71=20260504-0253-suerte-sketches.kra
+Name72=20260504-0417-suerte-new-style.kra
+Name73=20260507-0249-sketches-alt-styles.kra
+Name74=20260509-0337-emmi-sonas.kra
+Name75=20260509-0350-sketches.kra
+Name76=20260509-0228-sketches-sona.kra
+Name77=20260509-0139-suerte-alerta.kra
+Name78=20260510-2016-nwugat-model.kra
+Name79=20260512-0147-sketches.kra
 Name8=20251124-0126-suerte-redraw.kra
+Name80=20250628-234627-sketches-discord.kra
+Name81=20250629-012939-sketches-discord.kra
+Name82=20250703-015752-sketches-discord.kra
+Name83=20250703-015806-sketches-discord.kra
+Name84=20250703-040931-sketches-discord.kra
+Name85=20250711-003155-sketches.kra
+Name86=20250723_1-sketches.kra
+Name87=20250816_2-sketches.kra
+Name88=20250824a-sketches.kra
+Name89=20250828b-sketches-suerte.kra
 Name9=20251216-1753-doodles.kra
+Name90=20250829a-practice-body-proportions.kra
+Name91=20250831b-figures.kra
+Name92=20250926-gestures.kra
+Name93=20251022a-sketches.kra
+Name94=20251206-0216-sketches-sus.kra
+Name95=20251209-2226-sketch-suerte.kra
+Name96=20260402-0254-suerte-sketches.kra
+Name97=20260516-0341-sketch-psychohazard.kra
+Name98=20260517-1342-sketch-traffic-character.kra
+Name99=20260515-0019-nwugat-banner.kra
 maxRecentFileItems=100
 
 [SelectedTags]
@@ -855,9 +952,15 @@ workspaces=All
 
 [SvgSymbolCollection]
 currentCollection=0
+displayThumbnails=false
+iconSize=20
 
 [SvgTextTool]
 Geometry=AdnQywADAAAAAACzAAAAYQAABEAAAAJeAAAAswAAAH0AAARAAAACXgAAAAAAAAAABVYAAACzAAAAfQAABEAAAAJe
+cssStylePresetName=
+pasteRichtTextByDefault=false
+useCurrentTextProperties=true
+useVisualBidiCursor=false
 windowState=AAAA/wAAAAD9AAAAAAAAA44AAAFAAAAABAAAAAQAAAAIAAAACPwAAAADAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAAYAGYAbwBuAHQAUwBlAHQAdABpAG4AZwBzAQAAAAD/////AAAAAAAAAAAAAAACAAAAAQAAABQAZgBvAHIAbQBhAHQAdABpAG4AZwEAAAAA/////wAAAAAAAAAA
 
 [TemplateChooserDialog]
@@ -871,6 +974,7 @@ colorSelectorConfiguration=2|4|8|2
 commonColorsShow=false
 customSelectorBackgroundColor=160,160,164
 gamma=2.2
+lastUsedColorsPerDocument=false
 lastUsedColorsShow=false
 lumaG=0.7152
 lumaR=0.2126

@@ -4,8 +4,9 @@ switch-to-activity-017148f1-bac4-45ad-8c31-2c8c761d8071=none,none,Switch to acti
 switch-to-activity-bc736274-c41d-42b4-969f-c1ae2b29f00a=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
-Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,
-Switch to Next Keyboard Layout=Meta+Alt+K,Meta+Alt+K,
+Switch keyboard layout to English (US)=none,none,Switch keyboard layout to English (US)
+Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,Switch to Last-Used Keyboard Layout
+Switch to Next Keyboard Layout=Meta+Alt+K,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
 [kaccess]

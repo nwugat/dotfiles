@@ -158,5 +158,8 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 [Tiling][fe96638f-edc6-4b26-bd6e-d5ddd56f6f01][77ecb332-8ff2-412b-8e5b-9c11269a4c3d]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Wayland]
+InputMethod[$d]
+
 [Xwayland]
 Scale=1
