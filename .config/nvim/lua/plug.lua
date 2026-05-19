@@ -1,47 +1,29 @@
 local vim = vim
 
--- Auto install vim-plug and plugins, if not found
-local data_dir = vim.fn.stdpath('data')
-if vim.fn.empty(vim.fn.glob(data_dir .. '/site/autoload/plug.vim')) == 1 then
-  vim.cmd('silent !curl -fLo ' ..
-    data_dir ..
-    '/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim')
-  vim.o.runtimepath = vim.o.runtimepath
-  vim.cmd('autocmd VimEnter * PlugInstall --sync | source $MYVIMRC')
-end
+vim.pack.add({
 
-local Plug = function(plugin_name, alias)
-  if alias then
-    vim.fn['plug#'](plugin_name, { ['as'] = alias })
-  else
-    vim.fn['plug#'](plugin_name)
-  end
-end
+'https://github.com/ibhagwan/fzf-lua', -- Fuzzy finder
+{ src = 'https://github.com/catppuccin/nvim', name = 'catppuccin' }, -- Colorscheme
+'https://github.com/folke/which-key.nvim', -- Mappings popup
+'https://github.com/nvim-treesitter/nvim-treesitter', -- Improved syntax
+'https://github.com/windwp/nvim-autopairs', -- Autopairs
+'https://github.com/lewis6991/gitsigns.nvim', -- Git
+'https://github.com/emmanueltouzery/decisive.nvim', -- View csv files
+{ src = 'https://github.com/stevearc/oil.nvim', name = 'oil' }, -- File manager
+{ src = 'https://github.com/refractalize/oil-git-status.nvim', name = 'oil-git-status' }, --
+{ src = 'https://github.com/neovim/nvim-lspconfig', name = 'lspconfig' }, -- Lsp config
+{ src = 'https://github.com/mason-org/mason.nvim', 'mason' }, -- Mason
+{ src = 'https://github.com/MeanderingProgrammer/render-markdown.nvim', name = 'render-markdown' }, -- Render markdown inline
+'https://github.com/nvim-lua/plenary.nvim', -- Dependency for obsidian and telescope
+{ src = 'https://github.com/obsidian-nvim/obsidian.nvim', name = 'obsidian' }, -- Obsidian (fork)
+{ src = 'https://github.com/Saghen/blink.cmp', name = 'blink' }, -- Autocompletion
+{ src = 'https://github.com/niuiic/code-shot.nvim', name = 'code-shot' }, -- Screenshot code snippets
+{ src = 'https://github.com/sphamba/smear-cursor.nvim', name = 'smear-cursor' }, -- Effect. Smear my cursor
+'https://github.com/andweeb/presence.nvim', -- Discord rich presence
+'https://github.com/nvim-tree/nvim-web-devicons', -- Nerdfont devicons
+{ src = 'https://github.com/Saghen/blink.cmp', name = 'blink', version = vim.version.range('v1.*') }, -- Autocompletion
 
-vim.call('plug#begin')
-
-Plug('ibhagwan/fzf-lua')                                             -- Fuzzy finder
-Plug('catppuccin/nvim', 'catppuccin')                                -- Colorscheme
-Plug('folke/which-key.nvim')                                         -- Mappings popup
-Plug('nvim-treesitter/nvim-treesitter')                              -- Improved syntax
-Plug('windwp/nvim-autopairs')                                        -- Autopairs
-Plug('lewis6991/gitsigns.nvim')                                      -- Git
--- Plug('emmanueltouzery/decisive.nvim') -- View csv files
-Plug('stevearc/oil.nvim', 'oil')                                     -- File manager
-Plug('refractalize/oil-git-status.nvim', 'oil-git-status')
-Plug('neovim/nvim-lspconfig', 'lspconfig')                           -- Lsp config
-Plug('mason-org/mason.nvim', 'mason')                                -- Mason
-Plug('MeanderingProgrammer/render-markdown.nvim', 'render-markdown') -- Render markdown inline
-Plug('nvim-lua/plenary.nvim')                                        -- Dependency for obsidian and telescope
---Plug('obsidian-nvim/obsidian.nvim', 'obsidian') -- Obsidian (fork)
--- Plug('Saghen/blink.cmp', 'blink')                                    -- Autocompletion
-vim.fn['plug#']('Saghen/blink.cmp', { ['as'] = 'blink', ['tag'] = 'v1.*'})                                    -- Autocompletion
--- Plug('niuiic/code-shot.nvim', 'code-shot') -- Screenshot code snippets
-Plug('sphamba/smear-cursor.nvim', 'smear-cursor')                    -- Effect. Smear my cursor
--- Plug('andweeb/presence.nvim') -- Discord rich presence
-Plug('nvim-tree/nvim-web-devicons')                                  -- Nerdfont devicons
-
-vim.call('plug#end')
+})
 
 -- try to reach module, apply (probably) pending install if not able to
 local try_setup = function(module_name, opts)
@@ -57,6 +39,7 @@ local try_setup = function(module_name, opts)
     vim.cmd(':PlugInstall')
   end
 end
+
 
 try_setup('fzf-lua')
 try_setup('oil', {

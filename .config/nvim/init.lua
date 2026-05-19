@@ -1,5 +1,5 @@
 --general
-require('plug')       --plugin defs
+require('plug') --plugin defs
 require('config.opts')
 require('config.keymaps')
 require('config.autocmds')
