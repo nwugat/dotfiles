@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Website
+Comment=Open a website in your browser
+Exec=xdg-open "https://github.com/alacritty/alacritty-theme"
+Icon=web-browser
+Terminal=false
+Categories=Network;WebBrowser;

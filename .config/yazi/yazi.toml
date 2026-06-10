@@ -1,0 +1,37 @@
+[mgr]
+ratio          = [ 2, 4, 2 ]
+linemode       = "none"
+show_hidden    = true
+
+[preview]
+max_width       = 600
+max_height      = 900
+image_delay     = 0
+image_filter    = "triangle"
+image_quality   = 90
+ueberzug_scale  = 1
+ueberzug_offset = [ 0, 0, 0, 0 ]
+
+[input]
+cursor_blink = true
+
+[opener]
+qimgv = [
+  { run = 'qimgv "%s"', desc = "Open with qimgv image viewer" },
+]
+
+[open]
+append_rules = [
+  # { mime = "application/x-krita", use = "qimgv" },
+  { url = "*.kra", use = "qimgv" },
+]
+
+[plugin]
+prepend_preloaders = [
+    { url = "*.kra", run = "krita-preview" },
+    { url = "*.kra~", run = "krita-preview" },
+]
+prepend_previewers = [
+    { url = "*.kra", run = "krita-preview" },
+    { url = "*.kra~", run = "krita-preview" },
+]

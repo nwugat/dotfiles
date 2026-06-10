@@ -1,0 +1,27 @@
+language = en
+
+# font
+font-family = JetBrainsMono Nerd Font
+font-family-bold = JetBrainsMono NF Bold
+font-family-italic = JetBrainsMono NF Italic
+font-family-bold-italic = JetBrainsMono NF Bold Italic
+font-size = 10
+
+# Theme is slightly brighter than Campbell
+theme = Brogrammer
+
+cursor-style = block
+cursor-style-blink = true
+
+mouse-hide-while-typing = true
+
+notify-on-command-finish-action = no-bell,no-notify
+
+scrollbar = never
+
+window-padding-balance = true
+window-padding-color = extend
+window-vsync = false
+# none auto client server
+window-decoration = none
+window-save-state = never

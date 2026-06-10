@@ -1,0 +1,14 @@
+[flavor]
+dark = "catppuccin-mocha"
+
+[app]
+overall = { bg = "#1e1e2e" } # catppuccin-mocha bg colour
+
+[mgr]
+border_symbol = " "
+# border_style = {}
+
+[indicator]
+parent = {
+  hidden = true,
+}

@@ -1,0 +1,7 @@
+[[plugin.deps]]
+use = "walldmtd/krita-preview"
+rev = "2a1e66e"
+hash = "b2ae411155320dfc312e0be472978144"
+
+[flavor]
+deps = []
