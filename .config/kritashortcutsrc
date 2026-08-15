@@ -1,8 +1,10 @@
 [Shortcuts]
+KisToolSelectContiguous=W
 KisToolSelectElliptical=none
 KisToolSelectOutline=U
 KritaShape/KisToolEllipse=none
 KritaShape/KisToolMultiBrush=none
+PanTool=H
 ToolReferenceImages=Ctrl+Alt+R
 add_blank_frame=K
 add_new_fill_layer=Alt+Ins
@@ -36,6 +38,7 @@ remove_frames=Shift+K
 reset_canvas_rotation=Up
 set_end_time=End
 set_start_time=Home
+show_color_history=;\s
 show_common_colors=none
 softProof=none
 svg_align_justified=none

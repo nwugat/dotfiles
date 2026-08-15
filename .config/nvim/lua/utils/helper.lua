@@ -1,5 +1,6 @@
 -- Helper functions
 
+local vim = vim
 local m = {}
 
 m.insert_at_cursor = function(txt)
@@ -27,6 +28,16 @@ m.rand_id = function(length)
     result = result .. pool:sub(char_selected, char_selected)
   end
   return result
+end
+
+m.paste_img_from_clip = function(location)
+  --TODO: detect if file doesn't have an extension
+  --TODO  panic properly
+  --TODO  prompt to overwrite upon conflict
+  --TODO  make OS-agnostic
+  vim.fn.system("wl-paste --type image/png > " .. vim.fn.shellescape(location) .. ' 2>/dev/null')
+  assert(vim.v.shell_error ~= 127, "wl-paste not found")
+  assert(vim.v.shell_error == 0, "Could not paste image")
 end
 
 return m

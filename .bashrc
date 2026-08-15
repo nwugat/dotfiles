@@ -23,6 +23,6 @@ unset rc
 
 EDITOR=nvim
 
-command  v zoxide &1>/dev/null 2>&1 &&  eval "$(zoxide init bash)"
+command  v zoxide >/dev/null 2>&1 &&  eval "$(zoxide init bash)"
 
 [ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"

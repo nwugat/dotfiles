@@ -2,26 +2,29 @@ local vim = vim
 
 vim.pack.add({
 
-'https://github.com/ibhagwan/fzf-lua', -- Fuzzy finder
-{ src = 'https://github.com/catppuccin/nvim', name = 'catppuccin' }, -- Colorscheme
-'https://github.com/folke/which-key.nvim', -- Mappings popup
-'https://github.com/nvim-treesitter/nvim-treesitter', -- Improved syntax
-'https://github.com/windwp/nvim-autopairs', -- Autopairs
-'https://github.com/lewis6991/gitsigns.nvim', -- Git
-'https://github.com/emmanueltouzery/decisive.nvim', -- View csv files
-{ src = 'https://github.com/stevearc/oil.nvim', name = 'oil' }, -- File manager
-{ src = 'https://github.com/refractalize/oil-git-status.nvim', name = 'oil-git-status' }, --
-{ src = 'https://github.com/neovim/nvim-lspconfig', name = 'lspconfig' }, -- Lsp config
-{ src = 'https://github.com/mason-org/mason.nvim', 'mason' }, -- Mason
-{ src = 'https://github.com/MeanderingProgrammer/render-markdown.nvim', name = 'render-markdown' }, -- Render markdown inline
-'https://github.com/nvim-lua/plenary.nvim', -- Dependency for obsidian and telescope
-{ src = 'https://github.com/obsidian-nvim/obsidian.nvim', name = 'obsidian' }, -- Obsidian (fork)
-{ src = 'https://github.com/Saghen/blink.cmp', name = 'blink' }, -- Autocompletion
-{ src = 'https://github.com/niuiic/code-shot.nvim', name = 'code-shot' }, -- Screenshot code snippets
-{ src = 'https://github.com/sphamba/smear-cursor.nvim', name = 'smear-cursor' }, -- Effect. Smear my cursor
-'https://github.com/andweeb/presence.nvim', -- Discord rich presence
-'https://github.com/nvim-tree/nvim-web-devicons', -- Nerdfont devicons
-{ src = 'https://github.com/Saghen/blink.cmp', name = 'blink', version = vim.version.range('v1.*') }, -- Autocompletion
+  'https://github.com/ibhagwan/fzf-lua',                                                                -- Fuzzy finder
+  { src = 'https://github.com/catppuccin/nvim',                           name = 'catppuccin' },        -- Colorscheme
+  'https://github.com/folke/which-key.nvim',                                                            -- Mappings popup
+  'https://github.com/nvim-treesitter/nvim-treesitter',                                                 -- Improved syntax
+  'https://github.com/windwp/nvim-autopairs',                                                           -- Autopairs
+  'https://github.com/lewis6991/gitsigns.nvim',                                                         -- Git
+  'https://github.com/emmanueltouzery/decisive.nvim',                                                   -- View csv files
+  { src = 'https://github.com/stevearc/oil.nvim',                         name = 'oil' },               -- File manager
+  { src = 'https://github.com/refractalize/oil-git-status.nvim',          name = 'oil-git-status' },    --
+  { src = 'https://github.com/neovim/nvim-lspconfig',                     name = 'lspconfig' },         -- Lsp config
+  { src = 'https://github.com/mason-org/mason.nvim',                      'mason' },                    -- Mason
+  { src = 'https://github.com/MeanderingProgrammer/render-markdown.nvim', name = 'render-markdown' },   -- Render markdown inline
+  'https://github.com/nvim-lua/plenary.nvim',                                                           -- Dependency for obsidian and telescope
+  { src = 'https://github.com/obsidian-nvim/obsidian.nvim', name = 'obsidian' },                        -- Obsidian (fork)
+  { src = 'https://github.com/Saghen/blink.cmp',            name = 'blink' },                           -- Autocompletion
+  { src = 'https://github.com/niuiic/code-shot.nvim',       name = 'code-shot' },                       -- Screenshot code snippets
+  { src = 'https://github.com/sphamba/smear-cursor.nvim',   name = 'smear-cursor' },                    -- Effect. Smear my cursor
+  'https://github.com/andweeb/presence.nvim',                                                           -- Discord rich presence
+  'https://github.com/nvim-tree/nvim-web-devicons',                                                     -- Nerdfont devicons
+  { src = 'https://github.com/Saghen/blink.cmp', name = 'blink', version = vim.version.range('v1.*') }, -- Autocompletion
+  'https://github.com/lukas-reineke/indent-blankline.nvim',
+  -- 'https://gitlab.com/HiPhish/rainbow-delimiters.nvim'
+  'https://github.com/folke/todo-comments.nvim',
 
 })
 
@@ -35,11 +38,8 @@ local try_setup = function(module_name, opts)
     else
       module.setup()
     end
-  else
-    vim.cmd(':PlugInstall')
   end
 end
-
 
 try_setup('fzf-lua')
 try_setup('oil', {
@@ -118,3 +118,13 @@ try_setup('render-markdown', {
 --   },
 -- })
 try_setup('nvim-web-devicons')
+try_setup('ibl')
+try_setup('rainbow-delimiters.setup')
+try_setup('todo-comments', {
+  highlight = {
+    pattern = {
+      [[.*<(KEYWORDS)\s*:]],
+      [[.*<(KEYWORDS)\s* ]],
+    }
+  }
+})

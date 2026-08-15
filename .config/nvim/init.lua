@@ -5,7 +5,7 @@ require('config.keymaps')
 require('config.autocmds')
 require('config.lsp') --lsp configs
 --use-case specific
-require('extras.godot')
-require('extras.pkm')
+require('modules.godot')
+require('modules.pkm')
 --theme
 vim.cmd [[colorscheme catppuccin-mocha]]

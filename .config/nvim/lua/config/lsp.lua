@@ -8,6 +8,7 @@ vim.lsp.enable({
   'bashls',
   'rust_analyzer',
   'perlnavigator',
+  'clangd',
 })
 
 local capabilities = require('blink.cmp').get_lsp_capabilities()

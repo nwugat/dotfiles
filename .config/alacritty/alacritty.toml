@@ -1,5 +1,5 @@
 [general]
-import = ["themes/hyper.toml",]
+import = ["themes/gnome_terminal.toml",]
 working_directory = "~"
 live_config_reload = true
 ipc_socket = false
@@ -7,14 +7,14 @@ ipc_socket = false
 [window]
 dimensions = { columns = 0, lines = 0 }
 position = "None"
-padding = { x = 0, y = 0 }
+padding = { x = 4, y = 2 }
 dynamic_padding = true
-decorations = "None" # "Full" | "None" | "Transparent" | "Buttonless"
+decorations = "Full" # "Full" | "None" | "Transparent" | "Buttonless"
 opacity = 1.0
 blur = false
 startup_mode = "Windowed" # "Windowed" | "Maximized" | "Fullscreen" | "SimpleFullscreen"
 title = "Alacritty"
-dynamic_title = false
+dynamic_title = true
 class = { instance = "Alacritty", general = "Alacritty" }
 decorations_theme_variant = "Dark" # "Dark" | "Light" | "None"
 resize_increments = false
