@@ -1,1 +1,2 @@
-.config/nvim/nvim-pack-lock.json
+dot-config/nvim/nvim-pack-lock.json
+dot-config/alacritty/alacritty.toml

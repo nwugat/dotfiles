@@ -1,0 +1,5 @@
+[general]
+import = ["common.toml", "themes/hyper.toml"]
+
+[window]
+decorations = "None" # "Full" | "None" | "Transparent" | "Buttonless"

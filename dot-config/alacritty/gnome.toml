@@ -1,0 +1,6 @@
+[general]
+import = ["common.toml", "themes/gnome_terminal.toml"]
+
+[window]
+decorations = "Full" # "Full" | "None" | "Transparent" | "Buttonless"
+
