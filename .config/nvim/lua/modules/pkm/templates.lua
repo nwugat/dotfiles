@@ -1,11 +1,13 @@
-local vim = vim
 local m = {
+  --TODO: use file name as default title
   generic = {
     "---",
     function()
       return "date: " .. os.date('%Y-%m-%d-%H:%M')
     end,
     'up: "[[]]"',
+    'related:',
+    '    - "[[]]"',
     "---",
     "",
     "# ",
@@ -16,7 +18,12 @@ local m = {
       return "date: " .. os.date('%Y-%m-%d-%H:%M')
     end,
     'up: "[[]]"',
-    'author: "[[]]"',
+    function()
+      local ytdlp = require('modules.pkm.ytdlp')
+      local url = vim.fn.getreg('+')
+      local author = ytdlp.ytdlp_get_property(url, 'uploader') or 'Unknown'
+      return 'author: ' .. author
+    end,
     function()
       local url = vim.fn.getreg('+')
       --TODO check if url is valid
@@ -26,8 +33,15 @@ local m = {
     "",
     "#resource/yt",
     "",
-    "# ",
+    function()
+      local ytdlp = require('modules.pkm.ytdlp')
+      local url = vim.fn.getreg('+')
+      --TODO: use file name instead of empty string as fallback
+      local title = ytdlp.ytdlp_get_property(url, 'title') or ''
+      return '# ' .. title
+    end,
   },
 }
+m['.default'] = m.generic
 
 return m

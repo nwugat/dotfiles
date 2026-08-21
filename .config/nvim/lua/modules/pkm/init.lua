@@ -5,6 +5,7 @@ local subdirs = {
   scripts = '.scripts/',
   attachments = 'attachments/',
 }
+
 local templates = require('modules.pkm.templates')
 local helper = require('utils.helper')
 
@@ -61,7 +62,7 @@ local get_toc = function()
   return result
 end
 
-local toc_popup = function()
+local select_toc_fzf = function()
   local fzf_lua = require('fzf-lua')
   local opts = {
     prompt = "TOC>",
@@ -78,6 +79,35 @@ local toc_popup = function()
     }
   }
   fzf_lua.fzf_exec(get_toc(), opts)
+end
+
+local try_apply_template = function(template)
+  --TODO: also check if template is available
+  if not template then
+    vim.notify("Not a valid template", vim.log.levels.WARN)
+    return
+  end
+  vim.api.nvim_buf_set_lines(0, 0, 0, false, compile_template(templates[template]))
+  print("Inserted template '" .. template .. "'")
+end
+
+--TODO:
+local fzf_template = function()
+  local template_keys = {}
+  for k, _ in pairs(templates) do
+    template_keys[#template_keys + 1] = k
+  end
+  table.sort(template_keys)
+  local fzf_lua = require('fzf-lua')
+  local opts = {
+    prompt = "Templates>",
+    actions = {
+      ['default'] = function(selected)
+        try_apply_template(selected[1])
+      end
+    }
+  }
+  fzf_lua.fzf_exec(template_keys, opts)
 end
 
 --commands
@@ -119,12 +149,7 @@ vim.api.nvim_create_user_command(main_cmd_name, function(opts)
     end,
     [subcommand_names.template] = function(_args)
       local arg = table.concat(_args, "")
-      if not arg then
-        vim.notify("Not a valid template", vim.log.levels.ERROR)
-        return
-      end
-      vim.api.nvim_buf_set_lines(0, 0, 0, false, compile_template(templates[arg]))
-      print("Inserted template '" .. arg .. "'")
+      try_apply_template(arg)
     end,
   }
 
@@ -199,7 +224,8 @@ vim.keymap.set('n', '<leader>oN', function()
 vim.keymap.set('n', '<leader>os', fzf_search_notes, { desc = "[S]earch notes" })
 vim.keymap.set('n', '<leader>og', ':FzfLua grep_project cwd=' .. root_dir .. '<CR>', { desc = "[G]rep notes" }) --TODO: make this search only .md files
 vim.keymap.set('n', '<leader>oi', paste_img_from_clip, { desc = 'Paste copied [I]mage' })
-vim.keymap.set('n', '<leader>oc', toc_popup, { desc = 'TO[C]' })
+vim.keymap.set('n', '<leader>oc', select_toc_fzf, { desc = 'TO[C]' })
+vim.keymap.set('n', '<leader>ot', fzf_template, { desc = '[T]emplates' })
 --TODO:
 -- vim.keymap.set('n', '<leader>ot', ':Obsidian tags<CR>', { desc = 'Browse [T]ags' })
 -- vim.keymap.set('n', '<leader>ob', ':Obsidian backlinks<CR>', { desc = 'Show [B]acklinks' })

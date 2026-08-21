@@ -64,7 +64,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
     -- map('<leader>lS', fzflua.lsp_workspace_symbols, 'Workspace symbols')
     map('<leader>lS', vim.lsp.buf.workspace_symbol, 'Workspace symbols')
     map('<leader>lh', vim.diagnostic.open_float, 'Hover diagnostic')
-    map('<leader>ld', fzflua.lsp_document_diagnostics, 'Hover diagnostic')
+    map('<leader>ld', fzflua.lsp_document_diagnostics, 'fuzzy diagnostic')
 
     -- Enable auto-completion. Note: Use CTRL-Y to select an item. |complete_CTRL-Y|
     if client:supports_method('textDocument/completion') then

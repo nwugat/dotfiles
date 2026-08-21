@@ -25,6 +25,8 @@ vim.pack.add({
   'https://github.com/lukas-reineke/indent-blankline.nvim',
   -- 'https://gitlab.com/HiPhish/rainbow-delimiters.nvim'
   'https://github.com/folke/todo-comments.nvim',
+  'https://github.com/Myzel394/easytables.nvim',
+  'https://github.com/folke/lazydev.nvim', --automaticly sets luals up for editing nvim's config and plugins
 
 })
 
@@ -53,6 +55,18 @@ try_setup('mason')
 try_setup('blink.cmp', {
   fuzzy = {
     implementation = 'lua',
+  },
+  sources = {
+    -- add lazydev to your completion providers
+    default = { "lazydev", "lsp", "path", "snippets", "buffer" },
+    providers = {
+      lazydev = {
+        name = "LazyDev",
+        module = "lazydev.integrations.blink",
+        -- make lazydev completions top priority (see `:h blink.cmp`)
+        score_offset = 100,
+      },
+    },
   },
 })
 -- if vim.g.neovide then
@@ -127,4 +141,12 @@ try_setup('todo-comments', {
       [[.*<(KEYWORDS)\s* ]],
     }
   }
+})
+try_setup('easytables')
+try_setup('lazydev', {
+  library = {
+    -- See the configuration section for more details
+    -- Load luvit types when the `vim.uv` word is found
+    { path = "${3rd}/luv/library", words = { "vim%.uv" } },
+  },
 })
