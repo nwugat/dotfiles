@@ -2,4 +2,4 @@
 
 cd "$(dirname "$0")"
 
-stow --simulate --verbose --dotfiles --target "$HOME" .
+stow --verbose --dotfiles --target "$HOME" .
