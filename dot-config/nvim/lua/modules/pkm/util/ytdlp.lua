@@ -3,19 +3,36 @@
 local m = {}
 
 --use this to check yt-dlp availability instead of checking for the string below
+---@return boolean
 m.is_ytdlp_available = function()
   return vim.fn.executable('yt-dlp') == 1
 end
 
-m.ytdlp_get_property = function(url, property)
+---@return boolean
+m.is_youtube_url = function(url)
+  return
+      url:match("^https?://www%.youtube%.com/") ~= nil
+      or url:match("^https?://youtube%.com/") ~= nil
+      or url:match("^https?://www%.youtu%.be/") ~= nil
+      or url:match("^https?://youtu%.be/") ~= nil
+end
+
+---@param url string
+---@param property string
+---@return string?
+m.ytdlp_get_property_synchr = function(url, property)
   if not m.is_ytdlp_available() then
     vim.notify("yt-dlp not available", vim.log.levels.ERROR)
   end
 
   if not url or not type(url) == 'string' then
     vim.notify("URL not provided", vim.log.levels.ERROR)
-    return
+    return nil
+  elseif not m.is_youtube_url(url) then
+    vim.notify("Not a Youtube URL", vim.log.levels.ERROR)
+    return nil
   end
+
 
   if not property or not type(property) == 'string' then
     vim.notify("Property not provided", vim.log.levels.ERROR)
