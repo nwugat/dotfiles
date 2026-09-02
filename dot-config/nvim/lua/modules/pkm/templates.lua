@@ -1,10 +1,12 @@
+local date_field = function()
+  return "date: " .. os.date('%Y-%m-%d-%H:%M')
+end
+
 local m = {
   --TODO: use file name as default title
   generic = {
     "---",
-    function()
-      return "date: " .. os.date('%Y-%m-%d-%H:%M')
-    end,
+    date_field,
     'up: "[[]]"',
     'related:',
     '    - "[[]]"',
@@ -14,9 +16,7 @@ local m = {
   },
   yt = { --TODO add metadata with yt-dlp
     "---",
-    function()
-      return "date: " .. os.date('%Y-%m-%d-%H:%M')
-    end,
+    date_field,
     'up: "[[]]"',
     function()
       local ytdlp = require('modules.pkm.ytdlp')
@@ -40,6 +40,19 @@ local m = {
       local title = ytdlp.ytdlp_get_property(url, 'title') or ''
       return '# ' .. title
     end,
+  },
+  fleeting = {
+    '---',
+    date_field,
+    'up: "[[]]"',
+    'related:',
+    --TODO: consultar shiftwidth
+    '    - "[[]]"',
+    '---',
+    '',
+    '#fleeting',
+    '',
+    '# ',
   },
 }
 m['.default'] = m.generic
