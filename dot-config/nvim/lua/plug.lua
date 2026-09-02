@@ -26,7 +26,8 @@ vim.pack.add({
   -- 'https://gitlab.com/HiPhish/rainbow-delimiters.nvim'
   'https://github.com/folke/todo-comments.nvim',
   'https://github.com/Myzel394/easytables.nvim',
-  'https://github.com/folke/lazydev.nvim', --automaticly sets luals up for editing nvim's config and plugins
+  'https://github.com/folke/lazydev.nvim',         --automaticly sets luals up for editing nvim's config and plugins
+  'https://github.com/shortcuts/no-neck-pain.nvim' --center current buffer
 
 })
 
@@ -150,3 +151,4 @@ try_setup('lazydev', {
     { path = "${3rd}/luv/library", words = { "vim%.uv" } },
   },
 })
+try_setup('no-neck-pain')

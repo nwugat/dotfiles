@@ -22,7 +22,7 @@ m.ytdlp_get_property = function(url, property)
     return
   end
 
-  vim.notify("Retrieving video " .. property, vim.log.levels.INFO)
+  vim.notify("Retrieving video " .. property .. "...", vim.log.levels.INFO)
   local timeout = 10000 -- milliseconds
   local result = vim.system({ 'yt-dlp', '--print', property, url }):wait(timeout)
 

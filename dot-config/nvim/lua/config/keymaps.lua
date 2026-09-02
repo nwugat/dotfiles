@@ -80,3 +80,6 @@ if vim.g.neovide then
   vim.api.nvim_set_keymap("n", "<C-S-c>", '"+y', { silent = true })
   vim.api.nvim_set_keymap("n", "<C-S-v>", '"+p', { silent = true })
 end
+
+--NoNeckPain
+vim.keymap.set('n', '<leader>c', ':NoNeckPain<CR>', { desc = '[C]enter current buffer' })
