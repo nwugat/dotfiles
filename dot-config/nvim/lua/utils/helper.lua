@@ -40,4 +40,14 @@ m.paste_img_from_clip = function(location)
   assert(vim.v.shell_error == 0, "Could not paste image")
 end
 
+m.sanitize_str = function(str)
+  return str
+      :lower()
+      :gsub("_", "-")
+      :gsub("[^%w%.-]", "-")
+      :gsub("-+", "-")
+      :gsub("^%-", "")
+      :gsub("%-$", "")
+end
+
 return m
