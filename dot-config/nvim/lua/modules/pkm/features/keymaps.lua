@@ -3,7 +3,7 @@ local cmd_names = require('modules.pkm.features.commands.data_cmd_names')
 local dirs = require('modules.pkm.data.dirs')
 local template_actions = require('modules.pkm.features.template_actions')
 
-vim.keymap.set('n', '<leader>on', '<Cmd>' .. cmd_names.main_cmd_name .. ' ' .. cmd_names.subcommand_names.new_note .. ' ',
+vim.keymap.set('n', '<leader>on', ':' .. cmd_names.main_cmd_name .. ' ' .. cmd_names.subcommand_names.new_note .. ' ',
   { desc = 'New note' })
 --HACK:
 vim.keymap.set('n', '<leader>oN', function()
