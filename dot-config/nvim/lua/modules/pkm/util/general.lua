@@ -1,6 +1,6 @@
 --utility functions
 
-local data = require 'modules.pkm.data.dirs'
+local paths = require 'modules.pkm.data.paths'
 
 local m = {}
 
@@ -10,14 +10,17 @@ end
 
 m.fzf_search_notes = function()
   require('fzf-lua').files({
-    fd_opts = '.md$  --type f --exclude archive/  --exclude .stversions* --exclude .trash* ' .. data.vault_root
+    -- fd_opts = '.md$  --type f --exclude archive/  --exclude .stversions --exclude .trash ' .. data.vault_root
+    fd_opts =
+        [[".md$" --type f --exclude "archive/*" --exclude ".trash/*" --exclude ".stversions/*" --exclude "*.sync-conflict*" ]] ..
+        paths.vault_root,
   })
 end
 
 m.paste_img_from_clip = function()
   --TODO: get rid of helper
   local helper = require 'utils.helper'
-  local image_path = vim.fs.joinpath(data.subdirs.attachments, os.date('%Y%m%d-%H%M%S') .. '.png')
+  local image_path = vim.fs.joinpath(paths.subdirs.attachments, os.date('%Y%m%d-%H%M%S') .. '.png')
   local ok, err = pcall(function()
     helper.paste_img_from_clip(image_path)
   end)

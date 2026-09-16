@@ -2,7 +2,7 @@
 
 local ytdlp = require('modules.pkm.util.ytdlp')
 local template_actions = require('modules.pkm.features.template_actions')
-local dirs = require('modules.pkm.data.dirs')
+local dirs = require('modules.pkm.data.paths')
 local helper = require('utils.helper') --TODO: get rid of helper
 
 

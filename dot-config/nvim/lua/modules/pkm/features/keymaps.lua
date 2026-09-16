@@ -1,6 +1,6 @@
 local util = require('modules.pkm.util.general')
 local cmd_names = require('modules.pkm.features.commands.data_cmd_names')
-local dirs = require('modules.pkm.data.dirs')
+local dirs = require('modules.pkm.data.paths')
 local template_actions = require('modules.pkm.features.template_actions')
 
 vim.keymap.set('n', '<leader>on', ':' .. cmd_names.main_cmd_name .. ' ' .. cmd_names.subcommand_names.new_note .. ' ',

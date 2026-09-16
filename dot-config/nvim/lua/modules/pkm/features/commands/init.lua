@@ -1,6 +1,6 @@
 -- user-commands
 
-local dirs = require('modules.pkm.data.dirs')
+local dirs = require('modules.pkm.data.paths')
 local templates = require('modules.pkm.data.templates')
 local util = require('modules.pkm.util.general')
 local cmd_names = require('modules.pkm.features.commands.data_cmd_names')
