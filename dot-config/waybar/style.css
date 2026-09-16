@@ -1,0 +1,55 @@
+@define-color text rgba(255,255,255,1);
+@define-color highlight rgba(0,255,255,1);
+@define-color highlight-bg rgba(0,150,210,1);
+@define-color dark1 rgba(35,35,35,1);
+@define-color dark2 rgba(50,50,50,1);
+@define-color darkest rgba(25,25,25,1);
+
+* {
+  font-family: JetBrainsMono Nerd Font Propo;
+  font-size: 16px;
+  color: @text;
+}
+
+window#waybar {
+  background-color: @darkest;
+}
+
+#workspaces button {
+  padding: 3px;
+  margin: 8px 0px 8px 8px;
+  border-radius: 3px;
+}
+
+#workspaces button:hover {
+  background: none;
+  color: inherit;
+}
+
+#workspaces button.active {
+  /* background-color: @highlight; */
+  background-color: @dark1;
+  border: 2px solid @dark2;
+}
+
+#workspaces button label {
+  color: @dark2;
+}
+
+#workspaces button.active label {
+  color: @text;
+  font-weight: 700;
+}
+
+#pulseaudio,
+#battery,
+#bluetooth,
+#network,
+#cpu,
+#memory {
+  border-radius: 3px;
+  padding: 2px 6px;
+  background: @dark1;
+  margin: 4px 4px 4px 4px;
+  border: 2px solid @dark2;
+}
