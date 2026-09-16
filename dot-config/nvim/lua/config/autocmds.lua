@@ -9,8 +9,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
---line length limit marker for md files
+--line length limit marker for md and tex files
 vim.cmd [[autocmd FileType markdown setlocal colorcolumn=80]]
+vim.cmd [[autocmd FileType tex setlocal colorcolumn=80]]
 
 -- close nvim-tree if it's last buffer open
 -- vim.api.nvim_create_autocmd("BufEnter", {

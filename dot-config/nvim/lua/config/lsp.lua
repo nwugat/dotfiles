@@ -9,6 +9,7 @@ vim.lsp.enable({
   'rust_analyzer',
   'perlnavigator',
   'clangd',
+  'texlab',
 })
 
 local capabilities = require('blink.cmp').get_lsp_capabilities()
@@ -52,9 +53,9 @@ vim.api.nvim_create_autocmd('LspAttach', {
       vim.keymap.set(mode, keys, action, { desc = desc })
     end
 
-    if client:supports_method('textDocument/implementation') then
-      -- Create a keymap for vim.lsp.buf.implementation ...
-    end
+    -- if client:supports_method('textDocument/implementation') then
+    --   -- Create a keymap for vim.lsp.buf.implementation ...
+    -- end
 
     local fzflua = require('fzf-lua')
 
@@ -66,7 +67,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
     map('<leader>ld', fzflua.lsp_document_diagnostics, 'Fuzzy buf diagnostics')
     map('<leader>lD', fzflua.lsp_workspace_diagnostics, 'Fuzzy worksp diagnostics')
 
-    -- Enable auto-completion. Note: Use CTRL-Y to select an item. |complete_CTRL-Y|
+    -- Enable auto-completion.
     if client:supports_method('textDocument/completion') then
       -- Optional: trigger autocompletion on EVERY keypress. May be slow!
       -- local chars = {}; for i = 32, 126 do table.insert(chars, string.char(i)) end

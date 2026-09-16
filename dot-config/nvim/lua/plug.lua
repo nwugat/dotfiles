@@ -3,7 +3,6 @@ local vim = vim
 vim.pack.add({
 
   'https://github.com/ibhagwan/fzf-lua',                                                                -- Fuzzy finder
-  { src = 'https://github.com/catppuccin/nvim',                           name = 'catppuccin' },        -- Colorscheme
   'https://github.com/folke/which-key.nvim',                                                            -- Mappings popup
   'https://github.com/nvim-treesitter/nvim-treesitter',                                                 -- Improved syntax
   'https://github.com/windwp/nvim-autopairs',                                                           -- Autopairs
@@ -22,12 +21,15 @@ vim.pack.add({
   'https://github.com/andweeb/presence.nvim',                                                           -- Discord rich presence
   'https://github.com/nvim-tree/nvim-web-devicons',                                                     -- Nerdfont devicons
   { src = 'https://github.com/Saghen/blink.cmp', name = 'blink', version = vim.version.range('v1.*') }, -- Autocompletion
+  'https://github.com/Saghen/blink.compat',
+  'https://github.com/micangl/cmp-vimtex',
   'https://github.com/lukas-reineke/indent-blankline.nvim',
   -- 'https://gitlab.com/HiPhish/rainbow-delimiters.nvim'
   'https://github.com/folke/todo-comments.nvim',
   'https://github.com/Myzel394/easytables.nvim',
-  'https://github.com/folke/lazydev.nvim',         --automaticly sets luals up for editing nvim's config and plugins
-  'https://github.com/shortcuts/no-neck-pain.nvim' --center current buffer
+  'https://github.com/folke/lazydev.nvim',          --automaticly sets luals up for editing nvim's config and plugins
+  'https://github.com/shortcuts/no-neck-pain.nvim', --center current buffer
+  'https://github.com/lervag/vimtex',
 
 })
 
@@ -58,14 +60,19 @@ try_setup('blink.cmp', {
     implementation = 'lua',
   },
   sources = {
-    -- add lazydev to your completion providers
-    default = { "lazydev", "lsp", "path", "snippets", "buffer" },
+    default = { "lazydev", "lsp", "path", "snippets", "buffer", "vimtex" },
     providers = {
       lazydev = {
         name = "LazyDev",
         module = "lazydev.integrations.blink",
         -- make lazydev completions top priority (see `:h blink.cmp`)
         score_offset = 100,
+      },
+      vimtex = {
+        name = "vimtex",
+        min_keyword_length = 1,
+        module = "blink.compat.source",
+        score_offset = 80,
       },
     },
   },
@@ -152,3 +159,15 @@ try_setup('lazydev', {
   },
 })
 try_setup('no-neck-pain')
+
+--vimtex
+vim.g.vimtex_view_general_viewer = 'okular'
+vim.g.vimtex_view_general_options = [[--unique file:@pdf\#src:@line@tex]]
+vim.g.vimtex_compiler_method = "latexmk"
+vim.g.vimtex_compiler_latexmk = {
+  options = {
+    "-pdf",
+    "-interaction=nonstopmode",
+    "-synctex=1",
+  },
+}

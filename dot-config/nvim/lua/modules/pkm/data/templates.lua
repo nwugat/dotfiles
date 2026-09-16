@@ -8,8 +8,23 @@ local m = {
     'up: "[[]]"',
     'related:',
     '    - "[[]]"',
-    'development-status: C',
+    'score: C',
     "---",
+    "",
+    "# ",
+  },
+  fleeting = {
+    "---",
+    function()
+      return "date: " .. os.date('%Y-%m-%d-%H:%M')
+    end,
+    'up: "[[]]"',
+    'related:',
+    '    - "[[]]"',
+    'score: C',
+    "---",
+    "",
+    "#fleeting",
     "",
     "# ",
   },
@@ -34,7 +49,7 @@ local m = {
       --TODO check if url is valid
       return 'url: "' .. url .. '"'
     end,
-    'development-status: C',
+    'score: C',
     "---",
     "",
     "#resource/yt",
