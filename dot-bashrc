@@ -21,7 +21,10 @@ unset rc
 
 # Tools
 
-command -v zoxide >/dev/null 2>&1 && eval "$(zoxide init bash)"
+command -v zoxide >/dev/null 2>&1 && {
+  eval "$(zoxide init bash)"
+  alias cd=z
+}
 command -v nvim >/dev/null 2>&1 && EDITOR=nvim
 [ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
 [ -f "$HOME/.cargo/env" ] && . "/home/nwugat/.deno/env"
