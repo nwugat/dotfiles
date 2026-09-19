@@ -50,4 +50,35 @@ m.sanitize_str = function(str)
       :gsub("%-$", "")
 end
 
+m.platform_is_win = function()
+  return vim.loop.os_uname().sysname == "Windows_NT"
+end
+
+m.platform_is_mac = function()
+  return vim.loop.os_uname().sysname == "Darwin"
+end
+
+m.platform_is_lin = function()
+  return vim.loop.os_uname().sysname == "Linux"
+end
+
+---@return string?
+m.get_linux_session = function()
+  if vim.env["XDG_SESSION_TYPE"] == "tty" then
+    return "tty"
+  end
+
+  local de = vim.env["XDG_SESSION_DESKTOP"] or vim.env["XDG_CURRENT_DESKTOP"]
+  de = string.lower(de)
+
+  --TODO: add other DEs
+  if de:match("kde") then
+    return "kde"
+  elseif de:match("gnome") then
+    return "gnome"
+  else
+    return nil
+  end
+end
+
 return m

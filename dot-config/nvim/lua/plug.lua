@@ -1,35 +1,35 @@
-local vim = vim
+local helper = require "utils.helper"
 
 vim.pack.add({
 
-  'https://github.com/ibhagwan/fzf-lua',                                                                -- Fuzzy finder
-  'https://github.com/folke/which-key.nvim',                                                            -- Mappings popup
-  'https://github.com/nvim-treesitter/nvim-treesitter',                                                 -- Improved syntax
-  'https://github.com/windwp/nvim-autopairs',                                                           -- Autopairs
-  'https://github.com/lewis6991/gitsigns.nvim',                                                         -- Git
-  'https://github.com/emmanueltouzery/decisive.nvim',                                                   -- View csv files
-  { src = 'https://github.com/stevearc/oil.nvim',                         name = 'oil' },               -- File manager
-  { src = 'https://github.com/refractalize/oil-git-status.nvim',          name = 'oil-git-status' },    --
-  { src = 'https://github.com/neovim/nvim-lspconfig',                     name = 'lspconfig' },         -- Lsp config
-  { src = 'https://github.com/mason-org/mason.nvim',                      'mason' },                    -- Mason
-  { src = 'https://github.com/MeanderingProgrammer/render-markdown.nvim', name = 'render-markdown' },   -- Render markdown inline
-  'https://github.com/nvim-lua/plenary.nvim',                                                           -- Dependency for obsidian and telescope
-  { src = 'https://github.com/obsidian-nvim/obsidian.nvim', name = 'obsidian' },                        -- Obsidian (fork)
-  { src = 'https://github.com/Saghen/blink.cmp',            name = 'blink' },                           -- Autocompletion
-  { src = 'https://github.com/niuiic/code-shot.nvim',       name = 'code-shot' },                       -- Screenshot code snippets
-  { src = 'https://github.com/sphamba/smear-cursor.nvim',   name = 'smear-cursor' },                    -- Effect. Smear my cursor
-  'https://github.com/andweeb/presence.nvim',                                                           -- Discord rich presence
-  'https://github.com/nvim-tree/nvim-web-devicons',                                                     -- Nerdfont devicons
-  { src = 'https://github.com/Saghen/blink.cmp', name = 'blink', version = vim.version.range('v1.*') }, -- Autocompletion
+  'https://github.com/ibhagwan/fzf-lua',                                                                  -- Fuzzy finder
+  'https://github.com/folke/which-key.nvim',                                                              -- Mappings popup
+  'https://github.com/nvim-treesitter/nvim-treesitter',                                                   -- Improved syntax
+  'https://github.com/windwp/nvim-autopairs',                                                             -- Autopairs
+  'https://github.com/lewis6991/gitsigns.nvim',                                                           -- Git
+  'https://github.com/emmanueltouzery/decisive.nvim',                                                     -- View csv files
+  { src = 'https://github.com/stevearc/oil.nvim',                         name = 'oil' },                 -- File manager
+  { src = 'https://github.com/refractalize/oil-git-status.nvim',          name = 'oil-git-status' },      --
+  { src = 'https://github.com/neovim/nvim-lspconfig',                     name = 'lspconfig' },           -- Lsp config
+  { src = 'https://github.com/mason-org/mason.nvim',                      'mason' },                      -- Mason
+  { src = 'https://github.com/MeanderingProgrammer/render-markdown.nvim', name = 'render-markdown' },     -- Render markdown inline
+  'https://github.com/nvim-lua/plenary.nvim',                                                             -- Dependency for obsidian and telescope
+  { src = 'https://github.com/obsidian-nvim/obsidian.nvim', name = 'obsidian' },                          -- Obsidian (fork)
+  { src = 'https://github.com/Saghen/blink.cmp',            name = 'blink' },                             -- Autocompletion
+  { src = 'https://github.com/niuiic/code-shot.nvim',       name = 'code-shot' },                         -- Screenshot code snippets
+  { src = 'https://github.com/sphamba/smear-cursor.nvim',   name = 'smear-cursor' },                      -- Effect. Smear my cursor
+  'https://github.com/andweeb/presence.nvim',                                                             -- Discord rich presence
+  'https://github.com/nvim-tree/nvim-web-devicons',                                                       -- Nerdfont devicons
+  { src = 'https://github.com/Saghen/blink.cmp', name = 'blink',   version = vim.version.range('v1.*') }, -- Autocompletion
   'https://github.com/Saghen/blink.compat',
-  'https://github.com/micangl/cmp-vimtex',
-  'https://github.com/lukas-reineke/indent-blankline.nvim',
+  'https://github.com/lukas-reineke/indent-blankline.nvim',                                               -- visual guides for indents
   -- 'https://gitlab.com/HiPhish/rainbow-delimiters.nvim'
   'https://github.com/folke/todo-comments.nvim',
-  'https://github.com/Myzel394/easytables.nvim',
-  'https://github.com/folke/lazydev.nvim',          --automaticly sets luals up for editing nvim's config and plugins
-  'https://github.com/shortcuts/no-neck-pain.nvim', --center current buffer
-  'https://github.com/lervag/vimtex',
+  -- 'https://github.com/Myzel394/easytables.nvim',
+  'https://github.com/folke/lazydev.nvim',                            --automaticly sets luals up for editing nvim's config and plugins
+  'https://github.com/shortcuts/no-neck-pain.nvim',                   --center current buffer
+  { src = 'https://github.com/lervag/vimtex',    version = "v2.15" }, --latex support
+  'https://github.com/micangl/cmp-vimtex',                            --autocompletion source for vimtex
 
 })
 
@@ -160,14 +160,37 @@ try_setup('lazydev', {
 })
 try_setup('no-neck-pain')
 
---vimtex
-vim.g.vimtex_view_general_viewer = 'okular'
-vim.g.vimtex_view_general_options = [[--unique file:@pdf\#src:@line@tex]]
-vim.g.vimtex_compiler_method = "latexmk"
-vim.g.vimtex_compiler_latexmk = {
-  options = {
-    "-pdf",
-    "-interaction=nonstopmode",
-    "-synctex=1",
-  },
-}
+-- vimtex
+if helper.platform_is_lin() then
+  local session = helper.get_linux_session()
+  if session ~= "tty" then
+    return
+  end
+  if vim.fn.executable("zathura") then
+    vim.g.vimtex_view_general_viewer = 'zathura'
+    vim.g.vimtex_view_general_options = [[--synctex-forward @line:@tex @pdf]]
+  elseif session == "kde" and vim.fn.executable("okular") then
+    vim.g.vimtex_view_general_viewer = 'okular'
+    vim.g.vimtex_view_general_options = [[--unique file:@pdf\#src:@line@tex]]
+  elseif session == "gnome" and vim.fn.executable("papers") then
+    vim.g.vimtex_view_general_viewer = 'papers'
+    -- vim.g.vimtex_view_general_options = [[--unique file:@pdf\#src:@line@tex]]
+  end
+end
+
+if vim.fn.executable("latexmk") then
+  vim.g.vimtex_compiler_method = "latexmk"
+  vim.g.vimtex_compiler_latexmk = {
+    options = {
+      "-pdf",
+      "-interaction=nonstopmode",
+      "-synctex=1",
+    },
+  }
+else
+  vim.notify("Vimtex: latexmk not found", vim.log.levels.ERROR)
+end
+
+-- for some reason vimtex complains in gnome with this set to true
+-- https://github.com/lervag/vimtex/issues/2944#issuecomment-2081519460
+-- vim.g.vimtex_version_check = 0
