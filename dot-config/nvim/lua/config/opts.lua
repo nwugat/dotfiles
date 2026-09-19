@@ -50,4 +50,4 @@ if vim.g.neovide then
 end
 
 --enable editable messages
-require("vim._core.ui2").enable({})
+-- require("vim._core.ui2").enable({})

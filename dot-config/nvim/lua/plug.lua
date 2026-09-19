@@ -163,12 +163,12 @@ try_setup('no-neck-pain')
 -- vimtex
 if helper.platform_is_lin() then
   local session = helper.get_linux_session()
-  if session ~= "tty" then
+  if session == "tty" then
     return
   end
   if vim.fn.executable("zathura") then
     vim.g.vimtex_view_general_viewer = 'zathura'
-    vim.g.vimtex_view_general_options = [[--synctex-forward @line:@tex @pdf]]
+    -- vim.g.vimtex_view_general_options = [[--synctex-forward @line:@tex @pdf]]
   elseif session == "kde" and vim.fn.executable("okular") then
     vim.g.vimtex_view_general_viewer = 'okular'
     vim.g.vimtex_view_general_options = [[--unique file:@pdf\#src:@line@tex]]
