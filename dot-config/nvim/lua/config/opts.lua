@@ -48,3 +48,6 @@ vim.keymap.set({ 'n', 'x' }, '<leader>j', ':Justify<CR>', { desc = 'Justify' })
 if vim.g.neovide then
   vim.g.neovide_scale_factor = 0.7
 end
+
+--enable editable messages
+require("vim._core.ui2").enable({})
