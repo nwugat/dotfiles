@@ -1,5 +1,3 @@
-local vim = vim
-
 --Enable with default config
 vim.lsp.enable({
   'lua_ls',
@@ -91,7 +89,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
     end
 
     -- Symbol highlight
-    if client and client.supports_method(vim.lsp.protocol.Methods.textDocument_documentHighlight) then
+    if client and client:supports_method(vim.lsp.protocol.Methods.textDocument_documentHighlight) then
       local highlight_augroup = vim.api.nvim_create_augroup('nwugat-lsp-highlight', { clear = false })
       vim.api.nvim_create_autocmd({ 'CursorHold', 'CursorHoldI' }, {
         buffer = args.buf,
