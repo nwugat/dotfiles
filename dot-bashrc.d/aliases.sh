@@ -34,6 +34,10 @@ alias o='open-from-term'
 alias emacs="emacsclient -c -a 'emacs'"
 alias r='ranger'
 alias ff='fastfetch'
-alias fzf0="fzf | tr '\n' '\0'"
-alias fzfo="fzf | tr '\n' '\0' | xargs -0 xdg-open"
-alias fzfO="fzf | tr '\n' '\0' | xargs -0 xdg-open ; exit"
+command -v fzf >/dev/null 2>&1 && {
+  alias fzf0="fzf | tr '\n' '\0'"
+  alias fzfo="fzf | tr '\n' '\0' | xargs -0 xdg-open"
+  alias fzfO="fzf | tr '\n' '\0' | xargs -0 xdg-open ; exit"
+  alias cdf='cd $(ls | fzf || printf ".")'
+  alias cdfr='cd $(find -type d | fzf || printf ".")'
+}
