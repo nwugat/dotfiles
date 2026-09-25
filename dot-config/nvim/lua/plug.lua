@@ -30,6 +30,7 @@ vim.pack.add({
   'https://github.com/shortcuts/no-neck-pain.nvim',                   --center current buffer
   { src = 'https://github.com/lervag/vimtex',    version = "v2.15" }, --latex support
   'https://github.com/micangl/cmp-vimtex',                            --autocompletion source for vimtex
+  'https://github.com/S1M0N38/love2d.nvim'
 
 })
 
@@ -191,6 +192,4 @@ else
   vim.notify("Vimtex: latexmk not found", vim.log.levels.ERROR)
 end
 
--- for some reason vimtex complains in gnome with this set to true
--- https://github.com/lervag/vimtex/issues/2944#issuecomment-2081519460
--- vim.g.vimtex_version_check = 0
+try_setup('love2d', {})
