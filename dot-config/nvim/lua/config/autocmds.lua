@@ -1,17 +1,17 @@
 local vim = vim
 
 --highlight yank
-vim.api.nvim_create_autocmd('TextYankPost', {
-  desc = 'Highlight yanked text',
-  group = vim.api.nvim_create_augroup('highlight-yank', { clear = true }),
+vim.api.nvim_create_autocmd("TextYankPost", {
+  desc = "Highlight yanked text",
+  group = vim.api.nvim_create_augroup("highlight-yank", { clear = true }),
   callback = function()
     vim.highlight.on_yank()
   end,
 })
 
 --line length limit marker for md and tex files
-vim.cmd [[autocmd FileType markdown setlocal colorcolumn=80]]
-vim.cmd [[autocmd FileType tex setlocal colorcolumn=80]]
+vim.cmd([[autocmd FileType markdown setlocal colorcolumn=80]])
+vim.cmd([[autocmd FileType tex setlocal colorcolumn=80]])
 
 -- close nvim-tree if it's last buffer open
 -- vim.api.nvim_create_autocmd("BufEnter", {
@@ -43,5 +43,5 @@ vim.api.nvim_create_autocmd("TermOpen", {
   callback = function()
     vim.opt.number = false
     vim.opt.relativenumber = false
-  end
+  end,
 })
