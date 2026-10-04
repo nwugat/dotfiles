@@ -31,6 +31,7 @@ m.paste_img_from_clip = function()
   end
 end
 
+---@return string[]?
 m.get_toc = function()
   if not m.current_buffer_is_md() then
     vim.notify('Current buffer is not a Markdown buffer', vim.log.levels.WARN)
