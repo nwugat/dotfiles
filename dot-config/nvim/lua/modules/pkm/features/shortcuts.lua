@@ -34,45 +34,16 @@ m["YTNote"] = function()
 	--HACK: putting the url in the clipboard again, just in case. May be redundant
 	vim.fn.setreg("+", url)
 
-	template_actions.apply_template_with_key("yt")
-end
-
-m["Preview"] = function()
-	local curr_buf = vim.bo[vim.api.nvim_get_current_buf()]
-	--TODO: find a better location for this
-	local css_path = vim.fn.expand("~/Downloads/github-markdown.css")
-	--WARN: *nix only
-	local temp_path = "/tmp/nwu-notes-autogen.html"
-
-	if not curr_buf or curr_buf.filetype ~= "markdown" then
-		vim.notify("Current buffer is not a markdown buffer", vim.log.levels.ERROR)
-		return
-	end
-
-	if not vim.fn.filereadable(css_path) then
-		local source_ulr =
-			"https://raw.githubusercontent.com/sindresorhus/github-markdown-css/refs/heads/main/github-markdown.css"
-		local result = vim.system({ "curl", source_ulr }):wait()
-		vim.fn.writefile(result.stdout, css_path)
-	end
-
-	-- generate file
-	--WARN: not making any checks
-	vim.system({
-		"pandoc",
-		"--from",
-		"markdown",
-		vim.fn.expand("%:p"),
-		"--to",
-		"html",
-		"--standalone",
-		"--css=" .. css_path,
-		"--output",
-		temp_path,
-	}):wait()
-
-	-- open it
-	vim.system({ "xdg-open", vim.fn.expand(temp_path) }, { detach = true })
+	template_actions.apply_template(function()
+		local tutil = require("modules.pkm.util.template")
+		return tutil.table_concat(tutil.default_frontmatter_open, {
+			"author: " .. video_uploader,
+			"url: " .. url,
+			"---",
+			"",
+			"# " .. video_title,
+		})
+	end)
 end
 
 return m

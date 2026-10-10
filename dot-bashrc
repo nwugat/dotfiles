@@ -28,3 +28,5 @@ command -v zoxide >/dev/null 2>&1 && {
 command -v nvim >/dev/null 2>&1 && EDITOR=nvim
 [ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
 [ -f "$HOME/.cargo/env" ] && . "/home/nwugat/.deno/env"
+
+export PASSWORD_STORE_ENABLE_EXTENSIONS=true
