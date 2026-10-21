@@ -8,41 +8,12 @@ vim.pack.add({
 	{ src = "https://github.com/navarasu/onedark.nvim", name = "onedark" },
 	{ src = "https://github.com/bluz71/vim-moonfly-colors", name = "moonfly" },
 	{ src = "https://github.com/nyoom-engineering/oxocarbon.nvim", name = "oxocarbon" },
+	{ src = "https://github.com/folke/tokyonight.nvim", name = "tokyonight" },
+	{ src = "https://github.com/kepano/flexoki-neovim", name = "flexoki" },
+	{ src = "https://github.com/Mofiqul/vscode.nvim", name = "vscode" },
+	{ src = "https://github.com/Mofiqul/adwaita.nvim", name = "adwaita" },
+	{ src = "https://github.com/marcinbarylka/campbell-dark.nvim", name = "campbell" },
 })
 
---favourite colourschemes
-local use_theme = {
-	catppuccin = function()
-		vim.cmd([[colorscheme catppuccin-mocha ]])
-	end,
-	rose = function()
-		vim.cmd([[colorscheme rose-pine-main ]])
-	end,
-	kanagawa_warm = function()
-		vim.cmd([[colorscheme kanagawa-dragon ]])
-	end,
-	kanagawa_cool = function()
-		vim.cmd([[colorscheme kanagawa-wave ]])
-	end,
-	soviet = function()
-		vim.cmd([[colorscheme soviet-dark ]])
-	end,
-	gruvbox = function()
-		vim.cmd([[colorscheme gruvbox ]])
-	end,
-	miasma = function()
-		vim.cmd([[colorscheme miasma ]])
-	end,
-	onedark = function()
-		require("onedark").setup({
-			style = "warmer",
-		})
-		require("onedark").load()
-		vim.cmd([[colorscheme onedark ]])
-	end,
-	moonfly = function()
-		vim.cmd([[colorscheme moonfly ]])
-	end,
-}
-
-use_theme.catppuccin()
+vim.cmd([[colorscheme tokyonight-night]])
+-- vim.cmd([[colorscheme adwaita]])

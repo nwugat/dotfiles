@@ -20,7 +20,7 @@ vim.opt.splitbelow = true --open new vsplits below
 vim.opt.inccommand = "split" --preview substitutions live, as you type
 vim.opt.cursorline = true --highlight cursor Y position
 vim.opt.scrolloff = 10 --cursor vertical scroll offset
-vim.opt.conceallevel = 1 --???
+vim.opt.conceallevel = 0 --???
 
 -- Tabs
 vim.opt.expandtab = true --pressing tab inserts spaces
@@ -64,3 +64,13 @@ end
 
 --enable editable messages
 -- require("vim._core.ui2").enable({})
+
+vim.api.nvim_set_hl(0, "WinSeparator", { link = "MsgArea" })
+
+-- Syntax-highlight code in fenced blocks
+vim.g.markdown_fenced_languages = {
+  "python",
+  "lua",
+  "sql",
+  "c",
+}

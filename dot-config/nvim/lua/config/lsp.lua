@@ -59,7 +59,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		map("<leader>lS", vim.lsp.buf.workspace_symbol, "Workspace [S]ymbols")
 		map("<leader>lh", vim.diagnostic.open_float, "[H]over diagnostic")
 		map("<leader>lt", function()
-			vim.diagnostic.enable(vim.diagnostic.is_enabled())
+			vim.diagnostic.enable(not vim.diagnostic.is_enabled())
 		end, "[T]oggle diagnostics")
 		map("<A-]>", function()
 			vim.diagnostic.jump({ diagnostic = vim.diagnostic.get_next() })

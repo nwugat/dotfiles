@@ -8,10 +8,12 @@ font-family-bold-italic = JetBrainsMono NF Bold Italic
 font-size = 10
 
 # Theme is slightly brighter than Campbell
-theme = Brogrammer
+# theme = Brogrammer
+theme = Adwaita Dark
 
 cursor-style = block
-cursor-style-blink = true
+cursor-style-blink = false
+shell-integration-features = no-cursor
 
 mouse-hide-while-typing = true
 
@@ -23,5 +25,5 @@ window-padding-balance = true
 window-padding-color = extend
 window-vsync = false
 # none auto client server
-window-decoration = none
-window-save-state = never
+# window-decoration = none
+window-save-state = default

@@ -43,18 +43,15 @@ require("render-markdown").setup({
 	},
 })
 
-vim.api.nvim_set_hl(0, "@spell.markdown", {
-	link = "Normal",
-})
-
-vim.api.nvim_set_hl(0, "@conceal.markdown_inline", {
-	link = "NonText",
-})
-
-vim.api.nvim_set_hl(0, "@markup.link.markdown_inline", {
-	link = "NonText",
-})
-
-vim.api.nvim_set_hl(0, "@markup.link.url.markdown_inline", {
-	link = "NonText",
-})
+-- vim.api.nvim_set_hl(0, "@spell.markdown", {
+-- 	link = "Normal",
+-- })
+-- vim.api.nvim_set_hl(0, "@conceal.markdown_inline", {
+-- 	link = "NonText",
+-- })
+-- vim.api.nvim_set_hl(0, "@markup.link.markdown_inline", {
+-- 	link = "NonText",
+-- })
+-- vim.api.nvim_set_hl(0, "@markup.link.url.markdown_inline", {
+-- 	link = "NonText",
+-- })
