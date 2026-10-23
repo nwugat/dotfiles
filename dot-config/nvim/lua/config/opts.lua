@@ -23,7 +23,7 @@ vim.opt.scrolloff = 10 --cursor vertical scroll offset
 vim.opt.conceallevel = 0 --???
 
 -- Tabs
-vim.opt.expandtab = true --pressing tab inserts spaces
+vim.opt.expandtab = false --pressing tab inserts spaces
 vim.opt.tabstop = 2 --literal tab char size
 vim.opt.shiftwidth = 2 --indentation cmd indent size
 vim.opt.listchars = {
@@ -73,4 +73,5 @@ vim.g.markdown_fenced_languages = {
   "lua",
   "sql",
   "c",
+  "rust",
 }

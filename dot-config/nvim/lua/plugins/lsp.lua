@@ -15,7 +15,7 @@ require("fidget").setup({})
 
 require("conform").setup({
 	notify_on_error = false,
-	format_on_save = false,
+	format_on_save = nil,
 	-- format_on_save = function(bufnr)
 	-- 	local disable_filetypes = { c = true, cpp = true, markdown = true }
 	-- 	if disable_filetypes[vim.bo[bufnr].filetype] then
@@ -30,7 +30,14 @@ require("conform").setup({
 		html = { "prettier" },
 		js = { "prettier" },
 		css = { "prettier" },
+		sh = { "shfmt" },
+		bash = { "shfmt" },
 	},
+	-- formatters = {
+	-- 	shfmt = {
+	-- 		prepend_args = { "-i", "2" },
+	-- 	},
+	-- },
 })
 vim.keymap.set("", "<leader>bf", function()
 	require("conform").format({ async = true, lsp_format = "fallback" })
