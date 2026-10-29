@@ -1,4 +1,4 @@
-open-from-term ()  {
+open ()  {
   command -v xdg-open >/dev/null 2>&2 || {
     printf 'xdg-open not found\n' >&2
     return 1
@@ -11,6 +11,5 @@ open-from-term ()  {
     printf 'file "%s" does not exist\n' "$1" >&2
     return 1
   }
-  printf 'Opening file "%s"...' "$1"
-  xdg-open "$1" >/dev/null 2>&1 & disown
+  xdg-open "$1" >/dev/null 2>&1
 }
