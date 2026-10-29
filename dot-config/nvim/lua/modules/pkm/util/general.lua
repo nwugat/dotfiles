@@ -41,7 +41,7 @@ m.get_toc = function()
   local result = {}
   for i = 1, #lines do
     if string.match(lines[i], '^#+ ') then
-      table.insert(result, i .. ' ' .. lines[i])
+      table.insert(result, i .. '\t' .. lines[i])
     end
   end
   return result
@@ -64,6 +64,16 @@ m.select_toc_fzf = function()
     }
   }
   fzf_lua.fzf_exec(m.get_toc(), opts)
+end
+
+---@param str string
+---@return string
+m.sanitize_note_name = function(str)
+	return str
+		:gsub("^%s+", "")
+		:gsub("%s+$", "")
+		:gsub("[%s_]+", "-")
+		:lower()
 end
 
 return m

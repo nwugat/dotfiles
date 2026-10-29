@@ -74,4 +74,6 @@ vim.g.markdown_fenced_languages = {
   "sql",
   "c",
   "rust",
+  "cs",
+  "java",
 }

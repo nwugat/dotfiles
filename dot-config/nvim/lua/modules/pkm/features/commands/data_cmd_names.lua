@@ -6,6 +6,7 @@ m.subcommand_names = {
   archive_note = "Archive",
   template = "Template",
   shortcut = "Shortcut",
+  render = "Render",
 }
 
 return m

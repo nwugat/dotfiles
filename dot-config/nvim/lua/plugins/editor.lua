@@ -6,9 +6,9 @@ vim.pack.add({
 	"https://github.com/lukas-reineke/indent-blankline.nvim",
 	"https://github.com/folke/todo-comments.nvim",
 	"https://github.com/nvim-treesitter/nvim-treesitter",
-	-- latex support
-	{ src = "https://github.com/lervag/vimtex", version = "v2.15" },
+	{ src = "https://github.com/lervag/vimtex", version = "v2.15" },-- latex support
 	"https://github.com/micangl/cmp-vimtex",
+	"https://github.com/nvim-mini/mini.ai",
 })
 
 require("nvim-autopairs").setup({})
@@ -53,3 +53,5 @@ if vim.fn.executable("latexmk") then
 else
 	vim.notify("Vimtex: latexmk not found", vim.log.levels.ERROR)
 end
+
+require("mini.ai").setup()
