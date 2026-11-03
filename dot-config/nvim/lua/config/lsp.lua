@@ -1,5 +1,11 @@
 -- General LSP configs
 
+-- add nushell
+vim.lsp.config('nushell', {
+	cmd = { 'nu', '--no-config-file', '--lsp', },
+	filetypes = { 'nu' },
+})
+
 --Enable with default config
 vim.lsp.enable({
 	"lua_ls",
@@ -12,6 +18,8 @@ vim.lsp.enable({
 	"texlab",
 	"csharp_ls",
 	"sqls",
+	"nushell",
+	"jdtls",
 })
 
 local capabilities = require("blink.cmp").get_lsp_capabilities()
