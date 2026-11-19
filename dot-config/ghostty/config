@@ -6,9 +6,7 @@ font-family-italic = JetBrainsMono NF Italic
 font-family-bold-italic = JetBrainsMono NF Bold Italic
 font-size = 10
 
-# Theme is slightly brighter than Campbell
-# theme = Brogrammer
-theme = Adwaita Dark
+theme = Monokai Remastered
 
 cursor-style = block
 cursor-style-blink = false
@@ -26,3 +24,10 @@ window-vsync = false
 # none auto client server
 # window-decoration = none
 window-save-state = default
+
+# Enable programming ligatures
+font-feature = +liga
+font-feature = +calt
+font-feature = +dlig
+
+keybind = ctrl+shift+r=reload_config
