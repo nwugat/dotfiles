@@ -75,13 +75,21 @@ if vim.g.neovide then
   )
   vim.api.nvim_set_keymap(
     "n",
+    "<C-=>",
+    ":lua vim.g.neovide_scale_factor = vim.g.neovide_scale_factor + 0.1<CR>",
+    { silent = true }
+  )
+  vim.api.nvim_set_keymap(
+    "n",
     "<C-->",
     ":lua vim.g.neovide_scale_factor = vim.g.neovide_scale_factor - 0.1<CR>",
     { silent = true }
   )
   vim.api.nvim_set_keymap("n", "<C-0>", ":lua vim.g.neovide_scale_factor = 1<CR>", { silent = true })
-  vim.api.nvim_set_keymap("n", "<C-S-c>", '"+y', { silent = true })
-  vim.api.nvim_set_keymap("n", "<C-S-v>", '"+p', { silent = true })
+  vim.keymap.set({"n", "v"}, "<C-S-c>", '"+y', { silent = true })
+  vim.keymap.set({"n", "v", "i"}, "<C-S-v>", function()
+    vim.api.nvim_command('normal! "+p')
+  end, { silent = true })
 end
 
 -- Default height for term splits
