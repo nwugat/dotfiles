@@ -90,6 +90,9 @@ require("smear_cursor").setup({
   smear_between_neighbor_lines = false,
   smear_between_buffers = true,
 })
+if vim.g.neovide then
+	require("smear_cursor").enabled = false
+end
 
 -- noneckpain
 require("no-neck-pain").setup({})

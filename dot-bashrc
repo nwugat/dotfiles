@@ -23,10 +23,12 @@ unset rc
 
 command -v zoxide >/dev/null 2>&1 && {
   eval "$(zoxide init bash)"
-  alias cd=z
+  # alias cd=z
 }
 command -v nvim >/dev/null 2>&1 && EDITOR=nvim
 [ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
 [ -f "$HOME/.cargo/env" ] && . "/home/nwugat/.deno/env"
 
 export PASSWORD_STORE_ENABLE_EXTENSIONS=true
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"
