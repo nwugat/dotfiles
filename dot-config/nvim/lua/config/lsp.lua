@@ -1,12 +1,39 @@
 -- General LSP configs
 
--- add nushell
-vim.lsp.config('nushell', {
-	cmd = { 'nu', '--no-config-file', '--lsp', },
-	filetypes = { 'nu' },
+-- nushell
+vim.lsp.config("nushell", {
+	cmd = { "nu", "--no-config-file", "--lsp" },
+	filetypes = { "nu" },
 })
 
---Enable with default config
+-- jdtls
+vim.lsp.config("jdtls", {
+	cmd = function(dispatchers, config)
+		local root = config.root_dir or "standalone"
+		local workspace_dir = vim.fs.joinpath(
+			vim.fn.stdpath("cache"),
+			"jdtls", vim.fn.sha256(root))
+		return vim.lsp.rpc.start({
+			"jdtls",
+			"-data",
+			workspace_dir,
+		}, dispatchers)
+	end,
+	filetypes = { "java" },
+	root_markers = {
+		"pom.xml",
+		"build.gradle",
+		"build.gradle.kts",
+		"settings.gradle",
+		"settings.gradle.kts",
+		".project",
+		-- ".git",
+	},
+	workspace_required = false,
+})
+vim.lsp.enable("jdtls")
+
+-- Enable with default config. These will auto-start depending on how they're configured.
 vim.lsp.enable({
 	"lua_ls",
 	"gdscript",
@@ -19,7 +46,7 @@ vim.lsp.enable({
 	"csharp_ls",
 	"sqls",
 	"nushell",
-	"jdtls",
+	-- "jdtls",
 })
 
 local capabilities = require("blink.cmp").get_lsp_capabilities()

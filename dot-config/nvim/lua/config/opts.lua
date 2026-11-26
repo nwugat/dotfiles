@@ -60,6 +60,7 @@ vim.keymap.set({ "n", "x" }, "<leader>j", ":Justify<CR>", { desc = "Justify" })
 --GUI
 if vim.g.neovide then
 	vim.g.neovide_scale_factor = 0.7
+	vim.g.neovide_cursor_vfx_mode = "pixiedust"
 end
 
 --enable editable messages
